@@ -7,16 +7,27 @@ execute:
   keep-md: true
 ---
 
-## Palmer Penguins
+## Palmer Penguins Analysis
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+This is an analysis of the Palmer's Penguin dataset.
 
-## Running Code
+## Loading Packages and Datasets
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+Here we will load the tidyverse package and penguins data.
 
 ```{r}
-1 + 1
+#Load the tidyverse
+library(tidyverse)
+library(kableExtra)
+
+#Read the penguins_samp1 data file from github
+penguins <- read_csv("https://raw.githubusercontent.com/mcduryea/Intro-to-Bioinformatics/main/data/penguins_samp1.csv")
+
+#See the first six rows of the data we've read in to our notebook
+penguins %>%
+  head() %>%
+  kable() %>%
+  kable_styling(c("hover", "striped"))
 ```
 
 You can add options to executable code like this

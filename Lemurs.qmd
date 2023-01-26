@@ -1,0 +1,51 @@
+---
+title: "Lemurs"
+author: "Adaobi Nwankwo"
+format: html
+editor: visual
+execute:
+  keep-md: true
+---
+
+## Lemurs Analysis
+
+I'm choosing to work on this data set from the Duke Lemur Center.
+
+## Running Code
+
+Reading in the data. Here we will load the tidyverse package and Lemurs data.
+
+```{r}
+#Load the tidyverse
+library(tidyverse)
+library(kableExtra)
+
+```
+
+You can add options to executable code like this
+
+```{r}
+lemurs <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-08-24/lemur_data.csv')
+```
+
+```{r}
+lemurs %>%
+  head(10) %>%
+  kable() %>%
+  kable_styling(c("hover", "striped"))
+```
+
+## About Our Data
+
+This data comes from the Duke Lemur Center. The Duke Lemur Center houses over 200 lemurs across 14 species. Lemurs are the most threatened group of mammals and are at risk of extinction. This data set contains taxonomic code, specimen ID, hybrid status, sex, name, DOB, birth month, birth type, birth institution, litter size, and many more interesting variables about lemurs. This is a very large data set containing
+
+```{r}
+lemurs %>%
+  count(name)
+lemurs %>%
+  count(sex)
+lemurs %>%
+  group_by(name) %>%
+  count(sex)
+
+```

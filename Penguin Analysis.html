@@ -298,7 +298,7 @@ dbl (5): bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g, year
 # … with 34 more rows</code></pre>
 </div>
 </div>
-<p>If we want to <code>filter()</code> and only show certain rows, we can do that too.</p>
+<p>If we want to <code>filter()</code> and only show certain rows, we can do that too. Here, we filtered by sex, numerical variables, and both.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#we can filter by sex (categorical variables)</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">%&gt;%</span></span>
@@ -342,6 +342,7 @@ dbl (5): bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g, year
 <h2 class="anchored" data-anchor-id="answering-our-questions">Answering Our Questions</h2>
 <p>Most of our questions involve summarizing data, and perhaps summarizing over groups. We can summarize data using the <code>summarize()</code> function, and group data using <code>group_by()</code>.</p>
 <p>Let’s find the average flipper length.</p>
+<p>Using this function, I found that the Gentoo had the highest average flipper length of 218 and the Adelie had the lowest average flipper length of 189.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#overall average flipper length</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">%&gt;%</span></span>
@@ -375,7 +376,7 @@ dbl (5): bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g, year
 3 Gentoo                  218.</code></pre>
 </div>
 </div>
-<p>How many of each species do we have?</p>
+<p>How many of each species do we have? By using this function, I found that Gentoo had the highest count of species. This might mean that the data for the Gentoo species is a bit more accurate than the data for the Chinstrap species because the Chinstrap species has a count of 2. Since there’s only 2 of them it would be harder ti fund an accurate average.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">%&gt;%</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -388,7 +389,7 @@ dbl (5): bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g, year
 3 Gentoo       33</code></pre>
 </div>
 </div>
-<p>Are there more males of females penguins?</p>
+<p>Are there more males of females penguins? In the whole data set, it was found that there are more male species. Using different functions allows for a more specific finding when comparing sex in the data set. I was able to group sex by species and island and this was an interesting find.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">%&gt;%</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(sex)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -468,7 +469,8 @@ dbl (5): bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g, year
 1                2.95                  3.06</code></pre>
 </div>
 </div>
-<p>average body mass by year</p>
+<p>Average body mass by year.</p>
+<p>We can use the <code>summarize</code> function to find the average body mass by year. The average body mass was highest in year 2007 with a body mass of 5,078.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">%&gt;%</span></span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(year) <span class="sc">%&gt;%</span></span>
@@ -490,6 +492,8 @@ dbl (5): bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g, year
 <li><p>What is the distribution of penguin species?</p></li>
 <li><p>Does the distribution of flipper length depend on the species of the penguin?</p></li>
 </ul>
+<p>The next 3 graphs:</p>
+<p>The next few graphs contain ggplots. In the first plot, we compared species to their count. We did this earlier, but here we can visualize it which makes it a bit easier to compare. In the second plot we measured the distribution of bill lengths. Here it was found that the majority of the bill lengths had a length around 45mm. For the third plot we measured the distribution of flipper length. We also added a vline which showed us the mean and the median of the data. Again, we had this information before but here we look at it in a visualize way.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">%&gt;%</span></span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
@@ -534,7 +538,7 @@ dbl (5): bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g, year
 <p><img src="Penguin-Analysis_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>Let’s make a scatter plot to see if bill length is correlated with bill depth.</p>
+<p>Let’s make a scatter plot to see if bill length is correlated with bill depth. This scatter plot allowed us to compare bill length and bill depth by species. Given that the Chinstrap only had 2 counts, it’s scatterplot is very bland while the Gentoos have many points. When looking at this scatterplot it’s evident that bill length and bill depth are correlated. As the bill depth increases, the bill length increases.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">%&gt;%</span></span>
 <span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
@@ -557,7 +561,7 @@ dbl (5): bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g, year
 <p><img src="Penguin-Analysis_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>We will now look at the distribution of species.</p>
+<p>We will now look at the distribution of species. Here we learned how to use color which was a cool tool.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">%&gt;%</span></span>
 <span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
@@ -569,6 +573,7 @@ dbl (5): bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g, year
 <p><img src="Penguin-Analysis_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>We also learned how to add and title x and y intercepts and titles. With this data, it is evident that the Island Biscoe had the most species while Dream Island had the fewest species.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">%&gt;%</span></span>
 <span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
@@ -580,6 +585,7 @@ dbl (5): bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g, year
 <p><img src="Penguin-Analysis_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>Here we use a ggplot to look at the bill depth by species. In specific we can see the median bill depth for each species. We can see that the median bill depth varies for each species. In the plot under that we can see the mean for each species, this varies as well for each species. In the last plot, we compare flipper and bill lengths by species and sex. This also varies and there doesn’t seem to be a correlation.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">%&gt;%</span></span>
 <span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
@@ -645,7 +651,7 @@ Warning in max(ids, na.rm = TRUE): no non-missing arguments to max; returning
 </section>
 <section id="a-final-question" class="level2">
 <h2 class="anchored" data-anchor-id="a-final-question">A Final Question</h2>
-<p>Determine whether the average bill length for a penguin exceeds 45 mm.</p>
+<p>Determine whether the average bill length for a penguin exceeds 45 mm. It was found that the average bill length for a penguin is about 46.3 mm so it does exceed 45 mm.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">%&gt;%</span></span>
 <span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">avg_bill_length =</span> <span class="fu">mean</span>(bill_length_mm))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>

@@ -214,7 +214,7 @@ penguins %>%
 :::
 
 
-If we want to `filter()` and only show certain rows, we can do that too.
+If we want to `filter()` and only show certain rows, we can do that too. Here, we filtered by sex, numerical variables, and both.
 
 
 ::: {.cell}
@@ -281,6 +281,8 @@ Most of our questions involve summarizing data, and perhaps summarizing over gro
 
 Let's find the average flipper length.
 
+Using this function, I found that the Gentoo had the highest average flipper length of 218 and the Adelie had the lowest average flipper length of 189.
+
 
 ::: {.cell}
 
@@ -335,7 +337,7 @@ penguins %>%
 :::
 
 
-How many of each species do we have?
+How many of each species do we have? By using this function, I found that Gentoo had the highest count of species. This might mean that the data for the Gentoo species is a bit more accurate than the data for the Chinstrap species because the Chinstrap species has a count of 2. Since there's only 2 of them it would be harder ti fund an accurate average.
 
 
 ::: {.cell}
@@ -358,7 +360,7 @@ penguins %>%
 :::
 
 
-Are there more males of females penguins?
+Are there more males of females penguins? In the whole data set, it was found that there are more male species. Using different functions allows for a more specific finding when comparing sex in the data set. I was able to group sex by species and island and this was an interesting find.
 
 
 ::: {.cell}
@@ -477,7 +479,9 @@ penguins %>%
 :::
 
 
-average body mass by year
+Average body mass by year.
+
+We can use the `summarize` function to find the average body mass by year. The average body mass was highest in year 2007 with a body mass of 5,078.
 
 
 ::: {.cell}
@@ -508,6 +512,10 @@ penguins %>%
 -   What is the distribution of penguin species?
 
 -   Does the distribution of flipper length depend on the species of the penguin?
+
+The next 3 graphs:
+
+The next few graphs contain ggplots. In the first plot, we compared species to their count. We did this earlier, but here we can visualize it which makes it a bit easier to compare. In the second plot we measured the distribution of bill lengths. Here it was found that the majority of the bill lengths had a length around 45mm. For the third plot we measured the distribution of flipper length. We also added a vline which showed us the mean and the median of the data. Again, we had this information before but here we look at it in a visualize way.
 
 
 ::: {.cell}
@@ -576,7 +584,7 @@ Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
 :::
 
 
-Let's make a scatter plot to see if bill length is correlated with bill depth.
+Let's make a scatter plot to see if bill length is correlated with bill depth. This scatter plot allowed us to compare bill length and bill depth by species. Given that the Chinstrap only had 2 counts, it's scatterplot is very bland while the Gentoos have many points. When looking at this scatterplot it's evident that bill length and bill depth are correlated. As the bill depth increases, the bill length increases.
 
 
 ::: {.cell}
@@ -616,7 +624,7 @@ Warning in max(ids, na.rm = TRUE): no non-missing arguments to max; returning
 :::
 
 
-We will now look at the distribution of species.
+We will now look at the distribution of species. Here we learned how to use color which was a cool tool.
 
 
 ::: {.cell}
@@ -635,6 +643,10 @@ penguins %>%
 :::
 :::
 
+
+We also learned how to add and title x and y intercepts and titles. With this data, it is evident that the Island Biscoe had the most species while Dream Island had the fewest species.
+
+
 ::: {.cell}
 
 ```{.r .cell-code}
@@ -650,6 +662,10 @@ penguins %>%
 ![](Penguin-Analysis_files/figure-html/unnamed-chunk-15-1.png){width=672}
 :::
 :::
+
+
+Here we use a ggplot to look at the bill depth by species. In specific we can see the median bill depth for each species. We can see that the median bill depth varies for each species. In the plot under that we can see the mean for each species, this varies as well for each species. In the last plot, we compare flipper and bill lengths by species and sex. This also varies and there doesn't seem to be a correlation.
+
 
 ::: {.cell}
 
@@ -743,7 +759,7 @@ Warning in max(ids, na.rm = TRUE): no non-missing arguments to max; returning
 
 ## A Final Question
 
-Determine whether the average bill length for a penguin exceeds 45 mm.
+Determine whether the average bill length for a penguin exceeds 45 mm. It was found that the average bill length for a penguin is about 46.3 mm so it does exceed 45 mm.
 
 
 ::: {.cell}

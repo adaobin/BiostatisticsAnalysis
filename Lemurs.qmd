@@ -11,7 +11,7 @@ execute:
 
 I'm choosing to work on this data set from the Duke Lemur Center.
 
-## Running Code
+## Loading Packages and Datasets
 
 Reading in the data. Here we will load the tidyverse package and Lemurs data.
 
@@ -22,14 +22,24 @@ library(kableExtra)
 
 ```
 
-You can add options to executable code like this
-
 ```{r}
 lemurs <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-08-24/lemur_data.csv')
 ```
 
 ```{r}
-lemurs %>%
+install.packages("tidymodels")
+library(tidymodels)
+
+my_data_splits <- initial_split(lemurs, prop = 0.5)
+
+exploratory_data <- training(my_data_splits)
+test_data <- testing(my_data_splits)
+```
+
+Here, I loaded in a data set for the exploratory data of the Lemur data set. This is half of the data set.
+
+```{r}
+exploratory_data %>%
   head(10) %>%
   kable() %>%
   kable_styling(c("hover", "striped"))
@@ -39,13 +49,61 @@ lemurs %>%
 
 This data comes from the Duke Lemur Center. The Duke Lemur Center houses over 200 lemurs across 14 species. Lemurs are the most threatened group of mammals and are at risk of extinction. This data set contains taxonomic code, specimen ID, hybrid status, sex, name, DOB, birth month, birth type, birth institution, litter size, and many more interesting variables about lemurs. This is a very large data set containing
 
+## Interesting Questions to Ask
+
+-   How many Lemurs are there? By sex?
+-   What is the average weight of a Lemur? What about for each taxon?
+-   How many hybrids are there? What about per taxon? By sex?
+-   What is the average age of living Lemurs? What about by taxon? By sex?
+-   What is the average birth type for a Lemur? By sex? By Taxon?
+-   Does average litter size change by year?
+
+## Answering Our Questions
+
+Here we will look at the number of Lemurs in the data set and separate them by sex. We will also see the Lemurs grouped by their name. It is evident that there are 41,305 Lemurs within this data set. Out of these, 20,179 are female, 21,117 are male, and 8 are not determined. In is evident that in the table and the graph, MMUR has the biggest species count, with a count of 6,127.
+
 ```{r}
-lemurs %>%
-  count(name)
-lemurs %>%
+exploratory_data %>%
   count(sex)
-lemurs %>%
+exploratory_data %>%
+  count(taxon)
+exploratory_data %>%
+  count(name)
+exploratory_data %>%
   group_by(name) %>%
   count(sex)
+
+```
+
+```{r}
+exploratory_data %>%
+  ggplot() +
+  geom_bar(mapping = aes(x = taxon), color = "purple", fill = "pink") +
+  labs(title ="Count of Lemurs Species", x = "Species", y = "Count") +
+coord_flip()
+```
+
+Here we will see the average weight of a Lemur. To narrow this even more, we will look at the average weight of a Lemur per taxon. After running this, it is evident that the average weight of a Lemur is 1,484.9 grams. This is about 3.3 pounds which is very light. The taxon MMUR (Gray Mouse Lemur) has the lightest weight of 74 grams or 0.16 pounds. The taxon EFUL (Common Brown Lemur) has the heaviest weight of 2,372 grams or about 5 pounds.
+
+```{r}
+exploratory_data %>%
+  summarize(avg_lemur_weight = mean(weight_g))
+exploratory_data %>%
+  group_by(taxon) %>%
+  summarize(avg_lemur_weight = mean(weight_g))
+
+```
+
+Here, we will look at the number of hybrids per taxon and per sex. In total there are 1,034 hybrids which is a small amount compared to the 40,270 that are not a hybrid. The taxon EUL has the most hybrids which should be true as this is known as the hybrid species. There are 657 male hybrids and 377 female hybrids.
+
+```{r}
+exploratory_data %>%
+  count(hybrid)
+exploratory_data %>%
+  group_by(taxon) %>%
+  count(hybrid)
+exploratory_data %>%
+  group_by(sex) %>%
+  count(hybrid)
 
 ```

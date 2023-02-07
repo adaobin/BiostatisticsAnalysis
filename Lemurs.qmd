@@ -11,7 +11,7 @@ execute:
 
 I'm choosing to work on this data set from the Duke Lemur Center.
 
-## Loading Packages and Datasets
+## Loading Packages and Data sets
 
 Reading in the data. Here we will load the tidyverse package and Lemurs data.
 
@@ -36,6 +36,13 @@ exploratory_data <- training(my_data_splits)
 test_data <- testing(my_data_splits)
 ```
 
+```{r}
+install.packages("skimr")
+library(skimr)
+exploratory_data%>%
+  skim()
+```
+
 Here, I loaded in a data set for the exploratory data of the Lemur data set. This is half of the data set.
 
 ```{r}
@@ -47,16 +54,21 @@ exploratory_data %>%
 
 ## About Our Data
 
-This data comes from the Duke Lemur Center. The Duke Lemur Center houses over 200 lemurs across 14 species. Lemurs are the most threatened group of mammals and are at risk of extinction. This data set contains taxonomic code, specimen ID, hybrid status, sex, name, DOB, birth month, birth type, birth institution, litter size, and many more interesting variables about lemurs. This is a very large data set containing
+This data comes from the Duke Lemur Center. The Duke Lemur Center houses over 200 lemurs across 14 species. Lemurs are the most threatened group of mammals and are at risk of extinction. Lemurs are native to Madagascar which is located in the southwestern Indian Ocean. This data set contains taxonomic code, specimen ID, hybrid status, sex, name, DOB, birth month, birth type, birth institution, litter size, and many more interesting variables about lemurs. This is a very large data set containing
 
 ## Interesting Questions to Ask
 
 -   How many Lemurs are there? By sex?
 -   What is the average weight of a Lemur? What about for each taxon?
 -   How many hybrids are there? What about per taxon? By sex?
--   What is the average age of living Lemurs? What about by taxon? By sex?
 -   What is the average birth type for a Lemur? By sex? By Taxon?
--   Does average litter size change by year?
+-   Does average litter size change by birth type?
+
+## Hypotheses
+
+1.  If hybrid Lemurs are born then they are more likely to be captive-born rather than wild-born.
+
+2.  If Lemurs are mating it will more likley be in April and then the infants will be born around August and September.
 
 ## Answering Our Questions
 
@@ -106,4 +118,31 @@ exploratory_data %>%
   group_by(sex) %>%
   count(hybrid)
 
+```
+
+-   What is the average birth type for a Lemur? By sex? By Taxon?
+
+```{r}
+exploratory_data %>%
+  count(birth_type)
+exploratory_data %>%
+  group_by(taxon) %>%
+  count(birth_type)
+exploratory_data %>%
+  group_by(sex) %>%
+  count(birth_type)
+exploratory_data %>%
+  ggplot() +
+  geom_bar(mapping = aes(x = birth_type), color = "blue", fill = "black") +
+  labs(title ="Birth Types", x = "Birth Type", y = "Count")
+```
+
+-   Does average litter size change by the type of birth?
+
+```{r}
+exploratory_data %>%
+  count(litter_size)
+exploratory_data %>%
+  group_by(birth_type) %>%
+  count(litter_size)
 ```

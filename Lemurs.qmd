@@ -27,7 +27,7 @@ lemurs <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tid
 ```
 
 ```{r}
-install.packages("tidymodels")
+#install.packages("tidymodels")
 library(tidymodels)
 
 my_data_splits <- initial_split(lemurs, prop = 0.5)
@@ -37,7 +37,7 @@ test_data <- testing(my_data_splits)
 ```
 
 ```{r}
-install.packages("skimr")
+#install.packages("skimr")
 library(skimr)
 exploratory_data%>%
   skim()
@@ -60,7 +60,6 @@ This data comes from the Duke Lemur Center. The Duke Lemur Center houses over 20
 
 -   How many Lemurs are there? By sex?
 -   What is the average weight of a Lemur? What about for each taxon?
--   How many hybrids are there? What about per taxon? By sex?
 -   What is the average birth type for a Lemur? By sex? By Taxon?
 -   Does average litter size change by birth type?
 
@@ -68,7 +67,7 @@ This data comes from the Duke Lemur Center. The Duke Lemur Center houses over 20
 
 1.  If hybrid Lemurs are born then they are more likely to be captive-born rather than wild-born.
 
-2.  If Lemurs are mating it will more likley be in April and then the infants will be born around August and September.
+2.  If Lemurs are mating it will more likely be in April and then the infants will be born around August and September.
 
 ## Answering Our Questions
 
@@ -106,21 +105,7 @@ exploratory_data %>%
 
 ```
 
-Here, we will look at the number of hybrids per taxon and per sex. In total there are 1,034 hybrids which is a small amount compared to the 40,270 that are not a hybrid. The taxon EUL has the most hybrids which should be true as this is known as the hybrid species. There are 657 male hybrids and 377 female hybrids.
-
-```{r}
-exploratory_data %>%
-  count(hybrid)
-exploratory_data %>%
-  group_by(taxon) %>%
-  count(hybrid)
-exploratory_data %>%
-  group_by(sex) %>%
-  count(hybrid)
-
-```
-
--   What is the average birth type for a Lemur? By sex? By Taxon?
+Using the exploratory data it is evident that a larger majority are captive born. 37,489 are captive born while 3,724 are wild born. This may be because Lemurs are becoming extinct so it is harder for them to be born in the wild with larger numbers. When looking at birth type through taxon, it is evident that there are very few taxon that are wild born. When looking at sex, there is not a large gap between the different birth types when looking at sex. These variables are split pretty evenly. The graph shows the amount of birth types and it is very evident that the bar for captive born surpasses the bar for wild born by a large gap.
 
 ```{r}
 exploratory_data %>%
@@ -137,12 +122,91 @@ exploratory_data %>%
   labs(title ="Birth Types", x = "Birth Type", y = "Count")
 ```
 
--   Does average litter size change by the type of birth?
+It is evident that the average litter size is 1 with a count of 17,296. As the litter size goes up to 2, 3, and 4 it becomes more unlikely. A litter size of 4 has a count of 925. This could be another reason why Lemurs are becoming extinct. Since the litter size is lower, there is a lower number of species being born which correlates with the reduced population as a whole. Looking at the data regarding litter size and birth type it is evident that there is no data regarding the litter size of wild born Lemurs. This makes sense because it would be harder and maybe even impossible to track the litter size of wild born Lemurs.
 
 ```{r}
 exploratory_data %>%
   count(litter_size)
 exploratory_data %>%
+  ggplot() +
+  geom_bar(mapping = aes(x = litter_size), color = "purple", fill = "white") +
+  labs(title ="Litter Size", x = "Litter Size", y = "Count")
+exploratory_data %>%
   group_by(birth_type) %>%
   count(litter_size)
+```
+
+## Answering Our Hypothesis
+
+1.  If hybrid Lemurs are born then they are more likely to be captive-born rather than wild-born.
+
+Here, we will look at the number of hybrids per taxon and per sex. In total there are 1,034 hybrids which is a small amount compared to the 40,270 that are not a hybrid. The taxon EUL has the most hybrids which should be true as this is known as the hybrid species. There are 657 male hybrids and 377 female hybrids. My hypothesis was accepted, If hybrid Lemurs are born then they are more likley to be captive-born.
+
+```{r}
+exploratory_data %>%
+  count(hybrid)
+exploratory_data %>%
+  group_by(taxon) %>%
+  count(hybrid)
+exploratory_data %>%
+  group_by(sex) %>%
+  count(hybrid)
+
+```
+
+1.  If Lemurs are mating it will more likely be in April and then the infants will be born around August and September.
+
+According to this data, the conception month tends to be more around April, May, and June.
+
+```{r}
+exploratory_data %>%
+  count(concep_month)
+exploratory_data %>%
+  count(infant_dob_if_preg)
+exploratory_data %>%
+  mutate(infant_dob_month = lubridate::month(infant_dob_if_preg)) %>%
+  select(infant_dob_if_preg, infant_dob_month, everything()) %>%
+  filter(!is.na(infant_dob_month)) %>%
+  filter(!is.na(litter_size)) %>%
+  group_by(infant_dob_month) %>%
+  summarize(total_births = sum(litter_size))
+exploratory_data %>%
+  summarize(avg_expected_gestation = mean(expected_gestation))
+```
+
+## Inference
+
+Here I'll be using the "new" data which was unseen during the exploratory analysis seen earlier.
+
+here are the hypotheses, I till be testing with this new data.
+
+1.  If hybrid Lemurs are born then they are more likely to be captive-born rather than wild-born.
+
+2.  If Lemurs are mating it will more likely be in April and then the infants will be born around August and September.
+
+```{r}
+test_data %>%
+  count(hybrid)
+test_data %>%
+  group_by(taxon) %>%
+  count(hybrid)
+test_data %>%
+  group_by(sex) %>%
+  count(hybrid)
+```
+
+```{r}
+test_data %>%
+  count(concep_month)
+test_data %>%
+  count(infant_dob_if_preg)
+test_data %>%
+  mutate(infant_dob_month = lubridate::month(infant_dob_if_preg)) %>%
+  select(infant_dob_if_preg, infant_dob_month, everything()) %>%
+  filter(!is.na(infant_dob_month)) %>%
+  filter(!is.na(litter_size)) %>%
+  group_by(infant_dob_month) %>%
+  summarize(total_births = sum(litter_size))
+test_data %>%
+  summarize(avg_expected_gestation = mean(expected_gestation))
 ```

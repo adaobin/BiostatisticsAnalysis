@@ -58,6 +58,8 @@ This data comes from the Duke Lemur Center. The Duke Lemur Center houses over 20
 
 ## Interesting Questions to Ask
 
+This is a very large data set so the purpose of asking these questions is to find interesting hypotheses to ask. Exploring the data will make it easier to create hypotheses
+
 -   How many Lemurs are there? By sex?
 -   What is the average weight of a Lemur? What about for each taxon?
 -   What is the average birth type for a Lemur? By sex? By Taxon?
@@ -118,7 +120,7 @@ exploratory_data %>%
   count(birth_type)
 exploratory_data %>%
   ggplot() +
-  geom_bar(mapping = aes(x = birth_type), color = "blue", fill = "black") +
+  geom_bar(mapping = aes(x = birth_type), color = "hotpink", fill = "forestgreen") +
   labs(title ="Birth Types", x = "Birth Type", y = "Count")
 ```
 
@@ -140,7 +142,7 @@ exploratory_data %>%
 
 1.  If hybrid Lemurs are born then they are more likely to be captive-born rather than wild-born.
 
-Here, we will look at the number of hybrids per taxon and per sex. In total there are 1,034 hybrids which is a small amount compared to the 40,270 that are not a hybrid. The taxon EUL has the most hybrids which should be true as this is known as the hybrid species. There are 657 male hybrids and 377 female hybrids. My hypothesis was accepted, If hybrid Lemurs are born then they are more likley to be captive-born.
+Here, we will look at the number of hybrids per taxon and per sex. In total there are 992 hybrids which is a small amount compared to the 40,312 that are not a hybrid. The ggplot is used to really accentuate the difference bewteen these two variables. The taxon EUL has the most hybrids which should be true as this is known as the hybrid species. There are 624 male hybrids and 368 female hybrids. My hypothesis was accepted, If hybrid Lemurs are born then they are more likely to be captive-born.
 
 ```{r}
 exploratory_data %>%
@@ -151,12 +153,16 @@ exploratory_data %>%
 exploratory_data %>%
   group_by(sex) %>%
   count(hybrid)
+exploratory_data %>%
+  ggplot() +
+  geom_bar(mapping = aes(x = hybrid), color = "black", fill = "lightblue") +
+  labs(title ="Hybrid Count", x = "Hybrid (SP) vs. Not Hybrid (N)", y = "Count")
 
 ```
 
 1.  If Lemurs are mating it will more likely be in April and then the infants will be born around August and September.
 
-According to this data, the conception month tends to be more around April, May, and June.
+According to this data, the conception month tends to be more around April, May, and June. Compared to the hypothesis of April, this wasn't too off. The data also revealed that the infants are born in March, April, and May. The hypothesis predicted, August and September and this was way off. To find reasoning for this, I found the average expected gestation which was about 119 days. This tells us the period of developing inside the womb between conception and birth. 119 days is about 4 months so if conception occurred in April then the baby would be born around August which supports my hypothesis but does not hold true for the data.
 
 ```{r}
 exploratory_data %>%
@@ -184,6 +190,8 @@ here are the hypotheses, I till be testing with this new data.
 
 2.  If Lemurs are mating it will more likely be in April and then the infants will be born around August and September.
 
+Using the new data, we will look at the number of hybrids per taxon and per sex. In total there are 1,034 hybrids which is a small amount compared to the 40,270 that are not a hybrid. The taxon EUL has the most hybrids which should be true as this is known as the hybrid species. There are 657 male hybrids and 377 female hybrids. My hypothesis was accepted, If hybrid Lemurs are born then they are more likely to be captive-born. Comparing this results to the exploratory data it is evident that the results have similar findings. These findings allow us to understand the data very well.
+
 ```{r}
 test_data %>%
   count(hybrid)
@@ -193,7 +201,13 @@ test_data %>%
 test_data %>%
   group_by(sex) %>%
   count(hybrid)
+test_data %>%
+  ggplot() +
+  geom_bar(mapping = aes(x = hybrid), color = "brown", fill = "orange") +
+  labs(title ="Hybrid Count", x = "Hybrid (SP) vs. Not Hybrid (N)", y = "Count")
 ```
+
+According to this new data, the conception month still tends to be more around April, May, and June. Compared to the hypothesis of April, this wasn't too off. This new data also revealed that the infants are born in March, April, and May. The hypothesis predicted, August and September and this was way off. For this new data, the average expected gestation was also about 119 days. 119 days is about 4 months so if conception occurred in April then the baby would be born around August which supports my hypothesis but does not hold true for the data. These findings were exactly the same as the exploratory data findings. These findings allow us to understand the data very well.
 
 ```{r}
 test_data %>%

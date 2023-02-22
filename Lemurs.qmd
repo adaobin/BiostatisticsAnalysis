@@ -52,18 +52,20 @@ exploratory_data %>%
   kable_styling(c("hover", "striped"))
 ```
 
-## About Our Data
+## Introduction
 
-This data comes from the Duke Lemur Center. The Duke Lemur Center houses over 200 lemurs across 14 species. Lemurs are the most threatened group of mammals and are at risk of extinction. Lemurs are native to Madagascar which is located in the southwestern Indian Ocean. This data set contains taxonomic code, specimen ID, hybrid status, sex, name, DOB, birth month, birth type, birth institution, litter size, and many more interesting variables about lemurs. This is a very large data set containing
+This data comes from the Duke Lemur Center. The Duke Lemur Center houses over 200 lemurs across 14 species. Lemurs are the most threatened group of mammals and are at risk of extinction. Lemurs are native to Madagascar which is located in the southwestern Indian Ocean. This data set contains taxonomic code, specimen ID, hybrid status, sex, name, DOB, birth month, birth type, birth institution, litter size, and many more interesting variables about lemurs. This is a very large data set containing several different variables.
 
-## Interesting Questions to Ask
+## Abstract
 
-This is a very large data set so the purpose of asking these questions is to find interesting hypotheses to ask. Exploring the data will make it easier to create hypotheses
+This is a very large data set so the purpose of asking these questions is to find interesting hypotheses to ask. Exploring the data will make it easier to create hypotheses. Here are some interesting questions I asked.
 
 -   How many Lemurs are there? By sex?
 -   What is the average weight of a Lemur? What about for each taxon?
 -   What is the average birth type for a Lemur? By sex? By Taxon?
 -   Does average litter size change by birth type?
+
+In this report, these questions will be answered using different functions and visuals. An hypothesis will also be created and functions and visuals will support or refute the hypothesis. The purpose of this research is to shed light on Lemurs because I feel like Lemurs as a whole aren't really talked about much. The outcomes of this research will provide us with a lot more knowledge about Lemurs and their lifestyle.
 
 ## Hypotheses
 
@@ -224,3 +226,7 @@ test_data %>%
 test_data %>%
   summarize(avg_expected_gestation = mean(expected_gestation))
 ```
+
+## Conclusion
+
+In conclusion, Lemurs are very interesting species. Lemurs are the most threatened group of mammals and are at risk of extinction. Lemurs are native to Madagascar which is located in the southwestern Indian Ocean. I've learned a lot about Lemurs through this report. My first hypothesis was If hybrid Lemurs are born then they are more likely to be captive-born rather than wild-born. In conclusion, my hypothesis was accepted, If hybrid Lemurs are born then they are more likely to be captive-born. My second hypothesis was If Lemurs are mating it will more likely be in April and then the infants will be born around August and September. In conclusion, the hypothesis was refuted but according to the expected gestation my hypothesis should have been on point. There are many other things to explore in this data set and many more interesting things to learn about Lemurs. This data comes from the Duke Lemur Center.

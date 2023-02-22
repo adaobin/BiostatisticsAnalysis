@@ -109,7 +109,7 @@ library(tidymodels)
 ✖ dplyr::lag()             masks stats::lag()
 ✖ yardstick::spec()        masks readr::spec()
 ✖ recipes::step()          masks stats::step()
-• Dig deeper into tidy modeling with R at https://www.tmwr.org
+• Search for functions across packages at https://www.tidymodels.org/find/
 ```
 :::
 
@@ -212,7 +212,7 @@ exploratory_data%>%
    <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> 4 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2012 </td>
    <td style="text-align:right;"> 0 </td>
   </tr>
   <tr>
@@ -242,7 +242,7 @@ exploratory_data%>%
    <td style="text-align:right;"> 2 </td>
    <td style="text-align:right;"> 19 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1996 </td>
+   <td style="text-align:right;"> 1991 </td>
    <td style="text-align:right;"> 0 </td>
   </tr>
   <tr>
@@ -257,17 +257,17 @@ exploratory_data%>%
   </tr>
   <tr>
    <td style="text-align:left;"> stud_book </td>
-   <td style="text-align:right;"> 1358 </td>
+   <td style="text-align:right;"> 1389 </td>
    <td style="text-align:right;"> 0.97 </td>
    <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> 7 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1160 </td>
+   <td style="text-align:right;"> 1145 </td>
    <td style="text-align:right;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> estimated_dob </td>
-   <td style="text-align:right;"> 36084 </td>
+   <td style="text-align:right;"> 36008 </td>
    <td style="text-align:right;"> 0.13 </td>
    <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> 3 </td>
@@ -289,35 +289,35 @@ exploratory_data%>%
    <td style="text-align:left;"> birth_institution </td>
    <td style="text-align:right;"> 0 </td>
    <td style="text-align:right;"> 1.00 </td>
-   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 8 </td>
    <td style="text-align:right;"> 44 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 86 </td>
+   <td style="text-align:right;"> 83 </td>
    <td style="text-align:right;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> dam_id </td>
-   <td style="text-align:right;"> 502 </td>
+   <td style="text-align:right;"> 521 </td>
    <td style="text-align:right;"> 0.99 </td>
    <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> 9 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 548 </td>
+   <td style="text-align:right;"> 545 </td>
    <td style="text-align:right;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> dam_name </td>
-   <td style="text-align:right;"> 7581 </td>
+   <td style="text-align:right;"> 7622 </td>
    <td style="text-align:right;"> 0.82 </td>
    <td style="text-align:right;"> 2 </td>
    <td style="text-align:right;"> 15 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 471 </td>
+   <td style="text-align:right;"> 466 </td>
    <td style="text-align:right;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> dam_taxon </td>
-   <td style="text-align:right;"> 7581 </td>
+   <td style="text-align:right;"> 7622 </td>
    <td style="text-align:right;"> 0.82 </td>
    <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> 4 </td>
@@ -327,7 +327,7 @@ exploratory_data%>%
   </tr>
   <tr>
    <td style="text-align:left;"> sire_id </td>
-   <td style="text-align:right;"> 855 </td>
+   <td style="text-align:right;"> 865 </td>
    <td style="text-align:right;"> 0.98 </td>
    <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> 9 </td>
@@ -337,17 +337,17 @@ exploratory_data%>%
   </tr>
   <tr>
    <td style="text-align:left;"> sire_name </td>
-   <td style="text-align:right;"> 12426 </td>
+   <td style="text-align:right;"> 12431 </td>
    <td style="text-align:right;"> 0.70 </td>
    <td style="text-align:right;"> 2 </td>
    <td style="text-align:right;"> 17 </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 396 </td>
+   <td style="text-align:right;"> 395 </td>
    <td style="text-align:right;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> sire_taxon </td>
-   <td style="text-align:right;"> 12426 </td>
+   <td style="text-align:right;"> 12431 </td>
    <td style="text-align:right;"> 0.70 </td>
    <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> 4 </td>
@@ -357,7 +357,7 @@ exploratory_data%>%
   </tr>
   <tr>
    <td style="text-align:left;"> dob_estimated </td>
-   <td style="text-align:right;"> 36084 </td>
+   <td style="text-align:right;"> 36008 </td>
    <td style="text-align:right;"> 0.13 </td>
    <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> 3 </td>
@@ -406,48 +406,48 @@ exploratory_data%>%
 <tbody>
   <tr>
    <td style="text-align:left;"> dob </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> 1.00 </td>
-   <td style="text-align:left;"> 1946-10-01 </td>
+   <td style="text-align:left;"> 1958-10-01 </td>
    <td style="text-align:left;"> 2018-07-24 </td>
-   <td style="text-align:left;"> 1994-04-10 </td>
-   <td style="text-align:right;"> 1405 </td>
+   <td style="text-align:left;"> 1994-03-20 </td>
+   <td style="text-align:right;"> 1403 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> estimated_concep </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> 1.00 </td>
-   <td style="text-align:left;"> 1946-06-03 </td>
+   <td style="text-align:left;"> 1958-06-03 </td>
    <td style="text-align:left;"> 2018-05-22 </td>
-   <td style="text-align:left;"> 1993-11-11 </td>
-   <td style="text-align:right;"> 1442 </td>
+   <td style="text-align:left;"> 1993-10-26 </td>
+   <td style="text-align:right;"> 1434 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> dam_dob </td>
-   <td style="text-align:right;"> 7581 </td>
+   <td style="text-align:right;"> 7622 </td>
    <td style="text-align:right;"> 0.82 </td>
    <td style="text-align:left;"> 1958-10-01 </td>
-   <td style="text-align:left;"> 2015-01-08 </td>
+   <td style="text-align:left;"> 2014-09-13 </td>
    <td style="text-align:left;"> 1986-06-26 </td>
-   <td style="text-align:right;"> 408 </td>
+   <td style="text-align:right;"> 409 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> sire_dob </td>
-   <td style="text-align:right;"> 12426 </td>
+   <td style="text-align:right;"> 12431 </td>
    <td style="text-align:right;"> 0.70 </td>
    <td style="text-align:left;"> 1946-10-01 </td>
    <td style="text-align:left;"> 2014-08-07 </td>
    <td style="text-align:left;"> 1985-11-29 </td>
-   <td style="text-align:right;"> 357 </td>
+   <td style="text-align:right;"> 358 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> dod </td>
-   <td style="text-align:right;"> 18746 </td>
+   <td style="text-align:right;"> 18698 </td>
    <td style="text-align:right;"> 0.55 </td>
    <td style="text-align:left;"> 1969-06-02 </td>
    <td style="text-align:left;"> 2019-01-15 </td>
-   <td style="text-align:left;"> 2008-09-27 </td>
-   <td style="text-align:right;"> 1198 </td>
+   <td style="text-align:left;"> 2008-12-02 </td>
+   <td style="text-align:right;"> 1192 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> weight_date </td>
@@ -455,26 +455,26 @@ exploratory_data%>%
    <td style="text-align:right;"> 1.00 </td>
    <td style="text-align:left;"> 1968-09-16 </td>
    <td style="text-align:left;"> 2019-02-05 </td>
-   <td style="text-align:left;"> 2006-01-10 </td>
-   <td style="text-align:right;"> 8768 </td>
+   <td style="text-align:left;"> 2005-12-19 </td>
+   <td style="text-align:right;"> 8848 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> concep_date_if_preg </td>
-   <td style="text-align:right;"> 40336 </td>
+   <td style="text-align:right;"> 40358 </td>
    <td style="text-align:right;"> 0.02 </td>
    <td style="text-align:left;"> 1971-11-09 </td>
    <td style="text-align:left;"> 2018-05-22 </td>
-   <td style="text-align:left;"> 2003-08-20 </td>
-   <td style="text-align:right;"> 498 </td>
+   <td style="text-align:left;"> 2003-09-09 </td>
+   <td style="text-align:right;"> 497 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> infant_dob_if_preg </td>
-   <td style="text-align:right;"> 40336 </td>
+   <td style="text-align:right;"> 40358 </td>
    <td style="text-align:right;"> 0.02 </td>
    <td style="text-align:left;"> 1972-03-08 </td>
    <td style="text-align:left;"> 2018-07-24 </td>
-   <td style="text-align:left;"> 2004-01-27 </td>
-   <td style="text-align:right;"> 493 </td>
+   <td style="text-align:left;"> 2004-02-16 </td>
+   <td style="text-align:right;"> 489 </td>
   </tr>
 </tbody>
 </table>
@@ -501,10 +501,10 @@ exploratory_data%>%
 <tbody>
   <tr>
    <td style="text-align:left;"> birth_month </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> 1.00 </td>
-   <td style="text-align:right;"> 5.58 </td>
-   <td style="text-align:right;"> 2.71 </td>
+   <td style="text-align:right;"> 5.57 </td>
+   <td style="text-align:right;"> 2.70 </td>
    <td style="text-align:right;"> 1.00 </td>
    <td style="text-align:right;"> 4.00 </td>
    <td style="text-align:right;"> 5.00 </td>
@@ -514,10 +514,10 @@ exploratory_data%>%
   </tr>
   <tr>
    <td style="text-align:left;"> litter_size </td>
-   <td style="text-align:right;"> 9059 </td>
+   <td style="text-align:right;"> 9048 </td>
    <td style="text-align:right;"> 0.78 </td>
    <td style="text-align:right;"> 1.65 </td>
-   <td style="text-align:right;"> 0.81 </td>
+   <td style="text-align:right;"> 0.82 </td>
    <td style="text-align:right;"> 1.00 </td>
    <td style="text-align:right;"> 1.00 </td>
    <td style="text-align:right;"> 1.00 </td>
@@ -529,8 +529,8 @@ exploratory_data%>%
    <td style="text-align:left;"> expected_gestation </td>
    <td style="text-align:right;"> 0 </td>
    <td style="text-align:right;"> 1.00 </td>
-   <td style="text-align:right;"> 119.39 </td>
-   <td style="text-align:right;"> 39.72 </td>
+   <td style="text-align:right;"> 119.58 </td>
+   <td style="text-align:right;"> 39.73 </td>
    <td style="text-align:right;"> 62.00 </td>
    <td style="text-align:right;"> 90.00 </td>
    <td style="text-align:right;"> 124.00 </td>
@@ -540,64 +540,64 @@ exploratory_data%>%
   </tr>
   <tr>
    <td style="text-align:left;"> concep_month </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> 1.00 </td>
-   <td style="text-align:right;"> 6.62 </td>
+   <td style="text-align:right;"> 6.63 </td>
    <td style="text-align:right;"> 3.69 </td>
    <td style="text-align:right;"> 1.00 </td>
    <td style="text-align:right;"> 4.00 </td>
    <td style="text-align:right;"> 6.00 </td>
    <td style="text-align:right;"> 11.00 </td>
    <td style="text-align:right;"> 12.00 </td>
-   <td style="text-align:left;"> ▆▆▅▂▇ </td>
+   <td style="text-align:left;"> ▆▆▃▂▇ </td>
   </tr>
   <tr>
    <td style="text-align:left;"> dam_age_at_concep_y </td>
-   <td style="text-align:right;"> 7585 </td>
+   <td style="text-align:right;"> 7625 </td>
    <td style="text-align:right;"> 0.82 </td>
-   <td style="text-align:right;"> 7.20 </td>
-   <td style="text-align:right;"> 4.64 </td>
+   <td style="text-align:right;"> 7.17 </td>
+   <td style="text-align:right;"> 4.62 </td>
    <td style="text-align:right;"> 0.59 </td>
-   <td style="text-align:right;"> 3.64 </td>
-   <td style="text-align:right;"> 6.44 </td>
-   <td style="text-align:right;"> 10.19 </td>
+   <td style="text-align:right;"> 3.63 </td>
+   <td style="text-align:right;"> 6.38 </td>
+   <td style="text-align:right;"> 10.16 </td>
    <td style="text-align:right;"> 26.03 </td>
    <td style="text-align:left;"> ▇▆▂▁▁ </td>
   </tr>
   <tr>
    <td style="text-align:left;"> sire_age_at_concep_y </td>
-   <td style="text-align:right;"> 12430 </td>
+   <td style="text-align:right;"> 12434 </td>
    <td style="text-align:right;"> 0.70 </td>
-   <td style="text-align:right;"> 9.14 </td>
-   <td style="text-align:right;"> 6.26 </td>
+   <td style="text-align:right;"> 9.11 </td>
+   <td style="text-align:right;"> 6.28 </td>
    <td style="text-align:right;"> 0.61 </td>
-   <td style="text-align:right;"> 4.64 </td>
-   <td style="text-align:right;"> 7.49 </td>
-   <td style="text-align:right;"> 12.44 </td>
+   <td style="text-align:right;"> 4.62 </td>
+   <td style="text-align:right;"> 7.44 </td>
+   <td style="text-align:right;"> 12.37 </td>
    <td style="text-align:right;"> 33.36 </td>
    <td style="text-align:left;"> ▇▅▂▁▁ </td>
   </tr>
   <tr>
    <td style="text-align:left;"> age_at_death_y </td>
-   <td style="text-align:right;"> 18750 </td>
+   <td style="text-align:right;"> 18701 </td>
    <td style="text-align:right;"> 0.55 </td>
-   <td style="text-align:right;"> 17.44 </td>
-   <td style="text-align:right;"> 8.45 </td>
+   <td style="text-align:right;"> 17.50 </td>
+   <td style="text-align:right;"> 8.50 </td>
    <td style="text-align:right;"> 0.00 </td>
-   <td style="text-align:right;"> 11.06 </td>
-   <td style="text-align:right;"> 17.21 </td>
-   <td style="text-align:right;"> 23.40 </td>
+   <td style="text-align:right;"> 11.04 </td>
+   <td style="text-align:right;"> 17.34 </td>
+   <td style="text-align:right;"> 23.42 </td>
    <td style="text-align:right;"> 39.39 </td>
    <td style="text-align:left;"> ▃▇▇▅▂ </td>
   </tr>
   <tr>
    <td style="text-align:left;"> age_of_living_y </td>
-   <td style="text-align:right;"> 26638 </td>
-   <td style="text-align:right;"> 0.36 </td>
+   <td style="text-align:right;"> 26771 </td>
+   <td style="text-align:right;"> 0.35 </td>
    <td style="text-align:right;"> 13.50 </td>
-   <td style="text-align:right;"> 8.86 </td>
+   <td style="text-align:right;"> 8.93 </td>
    <td style="text-align:right;"> 0.54 </td>
-   <td style="text-align:right;"> 6.62 </td>
+   <td style="text-align:right;"> 6.60 </td>
    <td style="text-align:right;"> 10.65 </td>
    <td style="text-align:right;"> 19.81 </td>
    <td style="text-align:right;"> 35.20 </td>
@@ -605,35 +605,35 @@ exploratory_data%>%
   </tr>
   <tr>
    <td style="text-align:left;"> age_last_verified_y </td>
-   <td style="text-align:right;"> 37224 </td>
+   <td style="text-align:right;"> 37139 </td>
    <td style="text-align:right;"> 0.10 </td>
-   <td style="text-align:right;"> 12.90 </td>
-   <td style="text-align:right;"> 8.19 </td>
+   <td style="text-align:right;"> 12.61 </td>
+   <td style="text-align:right;"> 8.09 </td>
    <td style="text-align:right;"> 0.36 </td>
-   <td style="text-align:right;"> 6.82 </td>
-   <td style="text-align:right;"> 10.40 </td>
-   <td style="text-align:right;"> 19.14 </td>
+   <td style="text-align:right;"> 6.71 </td>
+   <td style="text-align:right;"> 10.08 </td>
+   <td style="text-align:right;"> 18.55 </td>
    <td style="text-align:right;"> 34.26 </td>
    <td style="text-align:left;"> ▆▇▃▃▂ </td>
   </tr>
   <tr>
    <td style="text-align:left;"> age_max_live_or_dead_y </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> 1.00 </td>
-   <td style="text-align:right;"> 15.59 </td>
-   <td style="text-align:right;"> 8.81 </td>
+   <td style="text-align:right;"> 15.60 </td>
+   <td style="text-align:right;"> 8.87 </td>
    <td style="text-align:right;"> 0.00 </td>
-   <td style="text-align:right;"> 7.80 </td>
-   <td style="text-align:right;"> 14.56 </td>
-   <td style="text-align:right;"> 22.54 </td>
+   <td style="text-align:right;"> 7.79 </td>
+   <td style="text-align:right;"> 14.46 </td>
+   <td style="text-align:right;"> 22.65 </td>
    <td style="text-align:right;"> 39.39 </td>
    <td style="text-align:left;"> ▇▇▆▅▂ </td>
   </tr>
   <tr>
    <td style="text-align:left;"> n_known_offspring </td>
-   <td style="text-align:right;"> 18479 </td>
-   <td style="text-align:right;"> 0.55 </td>
-   <td style="text-align:right;"> 5.60 </td>
+   <td style="text-align:right;"> 18315 </td>
+   <td style="text-align:right;"> 0.56 </td>
+   <td style="text-align:right;"> 5.62 </td>
    <td style="text-align:right;"> 4.77 </td>
    <td style="text-align:right;"> 1.00 </td>
    <td style="text-align:right;"> 2.00 </td>
@@ -646,13 +646,13 @@ exploratory_data%>%
    <td style="text-align:left;"> weight_g </td>
    <td style="text-align:right;"> 0 </td>
    <td style="text-align:right;"> 1.00 </td>
-   <td style="text-align:right;"> 1483.56 </td>
-   <td style="text-align:right;"> 1317.63 </td>
+   <td style="text-align:right;"> 1479.33 </td>
+   <td style="text-align:right;"> 1308.11 </td>
    <td style="text-align:right;"> 4.74 </td>
-   <td style="text-align:right;"> 196.00 </td>
+   <td style="text-align:right;"> 199.00 </td>
    <td style="text-align:right;"> 1300.00 </td>
    <td style="text-align:right;"> 2480.00 </td>
-   <td style="text-align:right;"> 10337.00 </td>
+   <td style="text-align:right;"> 10245.00 </td>
    <td style="text-align:left;"> ▇▅▁▁▁ </td>
   </tr>
   <tr>
@@ -660,7 +660,7 @@ exploratory_data%>%
    <td style="text-align:right;"> 0 </td>
    <td style="text-align:right;"> 1.00 </td>
    <td style="text-align:right;"> 6.50 </td>
-   <td style="text-align:right;"> 3.40 </td>
+   <td style="text-align:right;"> 3.39 </td>
    <td style="text-align:right;"> 1.00 </td>
    <td style="text-align:right;"> 4.00 </td>
    <td style="text-align:right;"> 7.00 </td>
@@ -670,51 +670,51 @@ exploratory_data%>%
   </tr>
   <tr>
    <td style="text-align:left;"> age_at_wt_d </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> 1.00 </td>
-   <td style="text-align:right;"> 3101.69 </td>
-   <td style="text-align:right;"> 2822.08 </td>
+   <td style="text-align:right;"> 3087.62 </td>
+   <td style="text-align:right;"> 2829.28 </td>
    <td style="text-align:right;"> 0.00 </td>
-   <td style="text-align:right;"> 765.00 </td>
-   <td style="text-align:right;"> 2305.00 </td>
-   <td style="text-align:right;"> 4799.00 </td>
+   <td style="text-align:right;"> 744.00 </td>
+   <td style="text-align:right;"> 2285.00 </td>
+   <td style="text-align:right;"> 4791.00 </td>
    <td style="text-align:right;"> 14373.00 </td>
    <td style="text-align:left;"> ▇▃▂▁▁ </td>
   </tr>
   <tr>
    <td style="text-align:left;"> age_at_wt_wk </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> 1.00 </td>
-   <td style="text-align:right;"> 443.10 </td>
-   <td style="text-align:right;"> 403.15 </td>
+   <td style="text-align:right;"> 441.09 </td>
+   <td style="text-align:right;"> 404.18 </td>
    <td style="text-align:right;"> 0.00 </td>
-   <td style="text-align:right;"> 109.29 </td>
-   <td style="text-align:right;"> 329.29 </td>
-   <td style="text-align:right;"> 685.57 </td>
+   <td style="text-align:right;"> 106.29 </td>
+   <td style="text-align:right;"> 326.43 </td>
+   <td style="text-align:right;"> 684.43 </td>
    <td style="text-align:right;"> 2053.29 </td>
    <td style="text-align:left;"> ▇▃▂▁▁ </td>
   </tr>
   <tr>
    <td style="text-align:left;"> age_at_wt_mo </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> 1.00 </td>
-   <td style="text-align:right;"> 101.97 </td>
-   <td style="text-align:right;"> 92.78 </td>
+   <td style="text-align:right;"> 101.51 </td>
+   <td style="text-align:right;"> 93.02 </td>
    <td style="text-align:right;"> 0.00 </td>
-   <td style="text-align:right;"> 25.15 </td>
-   <td style="text-align:right;"> 75.78 </td>
-   <td style="text-align:right;"> 157.78 </td>
+   <td style="text-align:right;"> 24.46 </td>
+   <td style="text-align:right;"> 75.12 </td>
+   <td style="text-align:right;"> 157.51 </td>
    <td style="text-align:right;"> 472.54 </td>
    <td style="text-align:left;"> ▇▃▂▁▁ </td>
   </tr>
   <tr>
    <td style="text-align:left;"> age_at_wt_mo_no_dec </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> 1.00 </td>
-   <td style="text-align:right;"> 101.48 </td>
-   <td style="text-align:right;"> 92.77 </td>
+   <td style="text-align:right;"> 101.02 </td>
+   <td style="text-align:right;"> 93.01 </td>
    <td style="text-align:right;"> 0.00 </td>
-   <td style="text-align:right;"> 25.00 </td>
+   <td style="text-align:right;"> 24.00 </td>
    <td style="text-align:right;"> 75.00 </td>
    <td style="text-align:right;"> 157.00 </td>
    <td style="text-align:right;"> 472.00 </td>
@@ -722,66 +722,66 @@ exploratory_data%>%
   </tr>
   <tr>
    <td style="text-align:left;"> age_at_wt_y </td>
-   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
    <td style="text-align:right;"> 1.00 </td>
-   <td style="text-align:right;"> 8.50 </td>
-   <td style="text-align:right;"> 7.73 </td>
+   <td style="text-align:right;"> 8.46 </td>
+   <td style="text-align:right;"> 7.75 </td>
    <td style="text-align:right;"> 0.00 </td>
-   <td style="text-align:right;"> 2.10 </td>
-   <td style="text-align:right;"> 6.32 </td>
-   <td style="text-align:right;"> 13.15 </td>
+   <td style="text-align:right;"> 2.04 </td>
+   <td style="text-align:right;"> 6.26 </td>
+   <td style="text-align:right;"> 13.13 </td>
    <td style="text-align:right;"> 39.38 </td>
    <td style="text-align:left;"> ▇▃▂▁▁ </td>
   </tr>
   <tr>
    <td style="text-align:left;"> change_since_prev_wt_g </td>
-   <td style="text-align:right;"> 1109 </td>
+   <td style="text-align:right;"> 1137 </td>
    <td style="text-align:right;"> 0.97 </td>
-   <td style="text-align:right;"> 20.20 </td>
-   <td style="text-align:right;"> 176.42 </td>
-   <td style="text-align:right;"> -1560.00 </td>
+   <td style="text-align:right;"> 20.00 </td>
+   <td style="text-align:right;"> 173.60 </td>
+   <td style="text-align:right;"> -1760.00 </td>
    <td style="text-align:right;"> -20.00 </td>
    <td style="text-align:right;"> 2.00 </td>
-   <td style="text-align:right;"> 45.00 </td>
+   <td style="text-align:right;"> 47.00 </td>
    <td style="text-align:right;"> 3662.00 </td>
    <td style="text-align:left;"> ▁▇▁▁▁ </td>
   </tr>
   <tr>
    <td style="text-align:left;"> days_since_prev_wt </td>
-   <td style="text-align:right;"> 1109 </td>
+   <td style="text-align:right;"> 1137 </td>
    <td style="text-align:right;"> 0.97 </td>
-   <td style="text-align:right;"> 55.13 </td>
-   <td style="text-align:right;"> 151.88 </td>
+   <td style="text-align:right;"> 54.90 </td>
+   <td style="text-align:right;"> 151.37 </td>
    <td style="text-align:right;"> 0.00 </td>
    <td style="text-align:right;"> 13.00 </td>
    <td style="text-align:right;"> 28.00 </td>
    <td style="text-align:right;"> 55.00 </td>
-   <td style="text-align:right;"> 6394.00 </td>
+   <td style="text-align:right;"> 7113.00 </td>
    <td style="text-align:left;"> ▇▁▁▁▁ </td>
   </tr>
   <tr>
    <td style="text-align:left;"> avg_daily_wt_change_g </td>
-   <td style="text-align:right;"> 1227 </td>
+   <td style="text-align:right;"> 1247 </td>
    <td style="text-align:right;"> 0.97 </td>
-   <td style="text-align:right;"> 0.60 </td>
-   <td style="text-align:right;"> 12.14 </td>
+   <td style="text-align:right;"> 0.56 </td>
+   <td style="text-align:right;"> 11.51 </td>
    <td style="text-align:right;"> -920.00 </td>
    <td style="text-align:right;"> -0.63 </td>
    <td style="text-align:right;"> 0.13 </td>
-   <td style="text-align:right;"> 1.82 </td>
+   <td style="text-align:right;"> 1.79 </td>
    <td style="text-align:right;"> 300.00 </td>
    <td style="text-align:left;"> ▁▁▁▇▁ </td>
   </tr>
   <tr>
    <td style="text-align:left;"> days_before_death </td>
-   <td style="text-align:right;"> 18746 </td>
+   <td style="text-align:right;"> 18698 </td>
    <td style="text-align:right;"> 0.55 </td>
-   <td style="text-align:right;"> 2665.59 </td>
-   <td style="text-align:right;"> 2271.44 </td>
+   <td style="text-align:right;"> 2710.07 </td>
+   <td style="text-align:right;"> 2281.73 </td>
    <td style="text-align:right;"> 0.00 </td>
-   <td style="text-align:right;"> 829.25 </td>
-   <td style="text-align:right;"> 2064.00 </td>
-   <td style="text-align:right;"> 4058.00 </td>
+   <td style="text-align:right;"> 860.00 </td>
+   <td style="text-align:right;"> 2120.00 </td>
+   <td style="text-align:right;"> 4084.00 </td>
    <td style="text-align:right;"> 13052.00 </td>
    <td style="text-align:left;"> ▇▃▂▁▁ </td>
   </tr>
@@ -800,49 +800,49 @@ exploratory_data%>%
   </tr>
   <tr>
    <td style="text-align:left;"> expected_gestation_d </td>
-   <td style="text-align:right;"> 40336 </td>
+   <td style="text-align:right;"> 40358 </td>
    <td style="text-align:right;"> 0.02 </td>
-   <td style="text-align:right;"> 141.45 </td>
-   <td style="text-align:right;"> 33.10 </td>
+   <td style="text-align:right;"> 141.59 </td>
+   <td style="text-align:right;"> 33.58 </td>
    <td style="text-align:right;"> 62.00 </td>
    <td style="text-align:right;"> 124.00 </td>
-   <td style="text-align:right;"> 160.00 </td>
-   <td style="text-align:right;"> 160.00 </td>
+   <td style="text-align:right;"> 145.00 </td>
+   <td style="text-align:right;"> 165.00 </td>
    <td style="text-align:right;"> 193.00 </td>
-   <td style="text-align:left;"> ▂▂▇▇▃ </td>
+   <td style="text-align:left;"> ▂▂▇▇▅ </td>
   </tr>
   <tr>
    <td style="text-align:left;"> days_before_inf_birth_if_preg </td>
-   <td style="text-align:right;"> 40336 </td>
+   <td style="text-align:right;"> 40358 </td>
    <td style="text-align:right;"> 0.02 </td>
-   <td style="text-align:right;"> 70.04 </td>
-   <td style="text-align:right;"> 47.03 </td>
+   <td style="text-align:right;"> 67.57 </td>
+   <td style="text-align:right;"> 47.25 </td>
    <td style="text-align:right;"> 0.00 </td>
-   <td style="text-align:right;"> 28.00 </td>
-   <td style="text-align:right;"> 67.50 </td>
-   <td style="text-align:right;"> 106.25 </td>
-   <td style="text-align:right;"> 192.00 </td>
-   <td style="text-align:left;"> ▇▆▆▃▁ </td>
+   <td style="text-align:right;"> 26.00 </td>
+   <td style="text-align:right;"> 62.00 </td>
+   <td style="text-align:right;"> 104.00 </td>
+   <td style="text-align:right;"> 193.00 </td>
+   <td style="text-align:left;"> ▇▆▅▃▁ </td>
   </tr>
   <tr>
    <td style="text-align:left;"> pct_preg_remain_if_preg </td>
-   <td style="text-align:right;"> 40336 </td>
+   <td style="text-align:right;"> 40358 </td>
    <td style="text-align:right;"> 0.02 </td>
-   <td style="text-align:right;"> 0.49 </td>
-   <td style="text-align:right;"> 0.30 </td>
+   <td style="text-align:right;"> 0.48 </td>
+   <td style="text-align:right;"> 0.31 </td>
    <td style="text-align:right;"> 0.00 </td>
-   <td style="text-align:right;"> 0.22 </td>
-   <td style="text-align:right;"> 0.51 </td>
-   <td style="text-align:right;"> 0.75 </td>
+   <td style="text-align:right;"> 0.20 </td>
+   <td style="text-align:right;"> 0.48 </td>
+   <td style="text-align:right;"> 0.76 </td>
    <td style="text-align:right;"> 1.00 </td>
-   <td style="text-align:left;"> ▇▆▆▇▇ </td>
+   <td style="text-align:left;"> ▇▆▆▆▆ </td>
   </tr>
   <tr>
    <td style="text-align:left;"> infant_lit_sz_if_preg </td>
-   <td style="text-align:right;"> 40341 </td>
+   <td style="text-align:right;"> 40361 </td>
    <td style="text-align:right;"> 0.02 </td>
-   <td style="text-align:right;"> 1.28 </td>
-   <td style="text-align:right;"> 0.56 </td>
+   <td style="text-align:right;"> 1.31 </td>
+   <td style="text-align:right;"> 0.61 </td>
    <td style="text-align:right;"> 1.00 </td>
    <td style="text-align:right;"> 1.00 </td>
    <td style="text-align:right;"> 1.00 </td>
@@ -932,332 +932,52 @@ exploratory_data %>%
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> ERUF </td>
-   <td style="text-align:left;"> 5740 </td>
+   <td style="text-align:left;"> PCOQ </td>
+   <td style="text-align:left;"> 6727 </td>
    <td style="text-align:left;"> N </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> ROSIE </td>
+   <td style="text-align:left;"> Antonia </td>
    <td style="text-align:left;"> N </td>
-   <td style="text-align:left;"> 982 </td>
-   <td style="text-align:left;"> 1983-03-20 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> CB </td>
-   <td style="text-align:left;"> Duke Lemur Center </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 120 </td>
-   <td style="text-align:left;"> 1982-11-20 </td>
-   <td style="text-align:right;"> 11 </td>
-   <td style="text-align:left;"> 4507 </td>
-   <td style="text-align:left;"> ROUGE </td>
-   <td style="text-align:left;"> ERUF </td>
-   <td style="text-align:left;"> 1977-02-27 </td>
-   <td style="text-align:right;"> 5.73 </td>
-   <td style="text-align:left;"> 3556 </td>
-   <td style="text-align:left;"> MENELAUS </td>
-   <td style="text-align:left;"> ERUF </td>
-   <td style="text-align:left;"> 1978-04-03 </td>
-   <td style="text-align:right;"> 4.64 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 5.24 </td>
-   <td style="text-align:right;"> 5.24 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> 2651 </td>
-   <td style="text-align:left;"> 1988-06-06 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;"> 1905 </td>
-   <td style="text-align:right;"> 272.14 </td>
-   <td style="text-align:right;"> 62.63 </td>
-   <td style="text-align:right;"> 62 </td>
-   <td style="text-align:right;"> 5.22 </td>
-   <td style="text-align:right;"> 236 </td>
-   <td style="text-align:right;"> 251 </td>
-   <td style="text-align:right;"> 0.94 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 1.55 </td>
-   <td style="text-align:left;"> adult </td>
-   <td style="text-align:left;"> NP </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ECOR </td>
-   <td style="text-align:left;"> 6979 </td>
-   <td style="text-align:left;"> N </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> Seshat </td>
-   <td style="text-align:left;"> Y </td>
-   <td style="text-align:left;"> 99 </td>
-   <td style="text-align:left;"> 2010-07-13 </td>
-   <td style="text-align:right;"> 7 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> CB </td>
-   <td style="text-align:left;"> Duke Lemur Center </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 124 </td>
-   <td style="text-align:left;"> 2010-03-11 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:left;"> 6800 </td>
-   <td style="text-align:left;"> Tasherit </td>
-   <td style="text-align:left;"> ECOR </td>
-   <td style="text-align:left;"> 2002-04-15 </td>
-   <td style="text-align:right;"> 7.91 </td>
-   <td style="text-align:left;"> 6369 </td>
-   <td style="text-align:left;"> Ikenaten </td>
-   <td style="text-align:left;"> ECOR </td>
-   <td style="text-align:left;"> 1990-04-18 </td>
-   <td style="text-align:right;"> 19.91 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 8.58 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 8.58 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> 1860 </td>
-   <td style="text-align:left;"> 2014-05-08 </td>
-   <td style="text-align:right;"> 5 </td>
-   <td style="text-align:right;"> 1395 </td>
-   <td style="text-align:right;"> 199.29 </td>
-   <td style="text-align:right;"> 45.86 </td>
-   <td style="text-align:right;"> 45 </td>
-   <td style="text-align:right;"> 3.82 </td>
-   <td style="text-align:right;"> -40 </td>
-   <td style="text-align:right;"> 11 </td>
-   <td style="text-align:right;"> -3.64 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 1.70 </td>
-   <td style="text-align:left;"> adult </td>
-   <td style="text-align:left;"> P </td>
-   <td style="text-align:right;"> 124 </td>
-   <td style="text-align:left;"> 2014-01-10 </td>
-   <td style="text-align:left;"> 2014-05-14 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;"> 0.0483871 </td>
-   <td style="text-align:right;"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> CMED </td>
-   <td style="text-align:left;"> 3619 </td>
-   <td style="text-align:left;"> N </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> ORIOLE </td>
-   <td style="text-align:left;"> N </td>
-   <td style="text-align:left;"> 352 </td>
-   <td style="text-align:left;"> 1988-08-10 </td>
-   <td style="text-align:right;"> 8 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> CB </td>
-   <td style="text-align:left;"> Duke Lemur Center </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 62 </td>
-   <td style="text-align:left;"> 1988-06-09 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:left;"> 1662 </td>
-   <td style="text-align:left;"> FORTUNA </td>
-   <td style="text-align:left;"> CMED </td>
-   <td style="text-align:left;"> 1985-07-23 </td>
-   <td style="text-align:right;"> 2.88 </td>
-   <td style="text-align:left;"> 1693 </td>
-   <td style="text-align:left;"> KINGLET </td>
-   <td style="text-align:left;"> CMED </td>
-   <td style="text-align:left;"> 1986-07-11 </td>
-   <td style="text-align:right;"> 1.92 </td>
-   <td style="text-align:left;"> 2010-11-16 </td>
-   <td style="text-align:right;"> 22.28 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 22.28 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> 220 </td>
-   <td style="text-align:left;"> 2005-03-27 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 6073 </td>
-   <td style="text-align:right;"> 867.57 </td>
-   <td style="text-align:right;"> 199.66 </td>
-   <td style="text-align:right;"> 199 </td>
-   <td style="text-align:right;"> 16.64 </td>
-   <td style="text-align:right;"> 10 </td>
-   <td style="text-align:right;"> 40 </td>
-   <td style="text-align:right;"> 0.25 </td>
-   <td style="text-align:right;"> 2060 </td>
-   <td style="text-align:right;"> 0.79 </td>
-   <td style="text-align:left;"> adult </td>
-   <td style="text-align:left;"> NP </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> VVV </td>
-   <td style="text-align:left;"> 6918 </td>
-   <td style="text-align:left;"> N </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> Grace </td>
-   <td style="text-align:left;"> N </td>
-   <td style="text-align:left;"> 1857 </td>
-   <td style="text-align:left;"> 1997-04-06 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> CB </td>
-   <td style="text-align:left;"> Santa Ana Zoo </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 104 </td>
-   <td style="text-align:left;"> 1996-12-23 </td>
-   <td style="text-align:right;"> 12 </td>
-   <td style="text-align:left;"> oi_M92017 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:left;"> oi_0790 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:left;"> 2014-05-28 </td>
-   <td style="text-align:right;"> 17.15 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 17.15 </td>
+   <td style="text-align:left;"> 178 </td>
+   <td style="text-align:left;"> 1998-02-22 </td>
    <td style="text-align:right;"> 2 </td>
    <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> 3980 </td>
-   <td style="text-align:left;"> 2014-03-11 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 6183 </td>
-   <td style="text-align:right;"> 883.29 </td>
-   <td style="text-align:right;"> 203.28 </td>
-   <td style="text-align:right;"> 203 </td>
-   <td style="text-align:right;"> 16.94 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 12 </td>
-   <td style="text-align:right;"> 0.00 </td>
-   <td style="text-align:right;"> 78 </td>
-   <td style="text-align:right;"> 1.59 </td>
-   <td style="text-align:left;"> adult </td>
-   <td style="text-align:left;"> NP </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MZAZ </td>
-   <td style="text-align:left;"> 319 </td>
-   <td style="text-align:left;"> N </td>
-   <td style="text-align:left;"> M </td>
-   <td style="text-align:left;"> GAKA </td>
-   <td style="text-align:left;"> N </td>
-   <td style="text-align:left;"> 101 </td>
-   <td style="text-align:left;"> 1979-08-25 </td>
-   <td style="text-align:right;"> 8 </td>
-   <td style="text-align:left;"> Y </td>
-   <td style="text-align:left;"> WB </td>
-   <td style="text-align:left;"> Madagascar / </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 90 </td>
-   <td style="text-align:left;"> 1979-05-27 </td>
-   <td style="text-align:right;"> 5 </td>
-   <td style="text-align:left;"> WILD </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:left;"> WILD </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:left;"> 1995-09-22 </td>
-   <td style="text-align:right;"> 16.09 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 16.09 </td>
-   <td style="text-align:right;"> 18 </td>
-   <td style="text-align:left;"> Y </td>
-   <td style="text-align:right;"> 280 </td>
-   <td style="text-align:left;"> 1994-05-24 </td>
-   <td style="text-align:right;"> 5 </td>
-   <td style="text-align:right;"> 5386 </td>
-   <td style="text-align:right;"> 769.43 </td>
-   <td style="text-align:right;"> 177.07 </td>
-   <td style="text-align:right;"> 177 </td>
-   <td style="text-align:right;"> 14.76 </td>
-   <td style="text-align:right;"> -30 </td>
-   <td style="text-align:right;"> 90 </td>
-   <td style="text-align:right;"> -0.33 </td>
-   <td style="text-align:right;"> 486 </td>
-   <td style="text-align:right;"> 0.82 </td>
-   <td style="text-align:left;"> adult </td>
-   <td style="text-align:left;"> NP </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ERUF </td>
-   <td style="text-align:left;"> 5799 </td>
-   <td style="text-align:left;"> N </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> COCHINEAL </td>
-   <td style="text-align:left;"> N </td>
-   <td style="text-align:left;"> 1023 </td>
-   <td style="text-align:left;"> 1983-05-08 </td>
-   <td style="text-align:right;"> 5 </td>
-   <td style="text-align:left;"> NA </td>
    <td style="text-align:left;"> CB </td>
    <td style="text-align:left;"> Duke Lemur Center </td>
    <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 120 </td>
-   <td style="text-align:left;"> 1983-01-08 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:left;"> 4502 </td>
-   <td style="text-align:left;"> OCHRE </td>
-   <td style="text-align:left;"> ERUF </td>
-   <td style="text-align:left;"> 1968-10-01 </td>
-   <td style="text-align:right;"> 14.28 </td>
-   <td style="text-align:left;"> 515 </td>
-   <td style="text-align:left;"> THURBER </td>
-   <td style="text-align:left;"> ERUF </td>
-   <td style="text-align:left;"> 1958-10-01 </td>
-   <td style="text-align:right;"> 24.29 </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 160 </td>
+   <td style="text-align:left;"> 1997-09-15 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:left;"> 6398 </td>
+   <td style="text-align:left;"> PAULINA </td>
+   <td style="text-align:left;"> PCOQ </td>
+   <td style="text-align:left;"> 1991-01-24 </td>
+   <td style="text-align:right;"> 6.65 </td>
+   <td style="text-align:left;"> 6450 </td>
+   <td style="text-align:left;"> VALENTINIAN </td>
+   <td style="text-align:left;"> PCOQ </td>
+   <td style="text-align:left;"> 1991-11-02 </td>
+   <td style="text-align:right;"> 5.87 </td>
+   <td style="text-align:left;"> 2017-05-23 </td>
+   <td style="text-align:right;"> 19.26 </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 3.67 </td>
-   <td style="text-align:right;"> 3.67 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> 2293 </td>
-   <td style="text-align:left;"> 1986-04-04 </td>
+   <td style="text-align:right;"> 19.26 </td>
    <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 1062 </td>
-   <td style="text-align:right;"> 151.71 </td>
-   <td style="text-align:right;"> 34.92 </td>
-   <td style="text-align:right;"> 34 </td>
-   <td style="text-align:right;"> 2.91 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 1.55 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 5500 </td>
+   <td style="text-align:left;"> 2002-09-18 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 1669 </td>
+   <td style="text-align:right;"> 238.43 </td>
+   <td style="text-align:right;"> 54.87 </td>
+   <td style="text-align:right;"> 54 </td>
+   <td style="text-align:right;"> 4.57 </td>
+   <td style="text-align:right;"> -70 </td>
+   <td style="text-align:right;"> 15 </td>
+   <td style="text-align:right;"> -4.67 </td>
+   <td style="text-align:right;"> 5361 </td>
+   <td style="text-align:right;"> 2.64 </td>
    <td style="text-align:left;"> young_adult </td>
    <td style="text-align:left;"> NP </td>
    <td style="text-align:right;"> NA </td>
@@ -1269,50 +989,50 @@ exploratory_data %>%
   </tr>
   <tr>
    <td style="text-align:left;"> NCOU </td>
-   <td style="text-align:left;"> 1959 </td>
+   <td style="text-align:left;"> 1958 </td>
    <td style="text-align:left;"> N </td>
-   <td style="text-align:left;"> M </td>
-   <td style="text-align:left;"> KIRITAN </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> RANI </td>
    <td style="text-align:left;"> N </td>
-   <td style="text-align:left;"> 1353 </td>
-   <td style="text-align:left;"> 1985-04-06 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:left;"> Y </td>
+   <td style="text-align:left;"> 1403 </td>
+   <td style="text-align:left;"> 1989-03-17 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:left;"> NA </td>
    <td style="text-align:left;"> CB </td>
-   <td style="text-align:left;"> Skansen Akvariet </td>
-   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> Duke Lemur Center </td>
+   <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> 193 </td>
-   <td style="text-align:left;"> 1984-09-25 </td>
+   <td style="text-align:left;"> 1988-09-05 </td>
    <td style="text-align:right;"> 9 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> 1903 </td>
+   <td style="text-align:left;"> LALITA </td>
+   <td style="text-align:left;"> NCOU </td>
+   <td style="text-align:left;"> 1985-04-08 </td>
+   <td style="text-align:right;"> 3.41 </td>
+   <td style="text-align:left;"> 993 </td>
+   <td style="text-align:left;"> KALKI </td>
+   <td style="text-align:left;"> NCOU </td>
+   <td style="text-align:left;"> 1984-05-03 </td>
+   <td style="text-align:right;"> 4.35 </td>
+   <td style="text-align:left;"> 2009-01-09 </td>
+   <td style="text-align:right;"> 19.83 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:left;"> 2006-06-03 </td>
-   <td style="text-align:right;"> 21.17 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 21.17 </td>
+   <td style="text-align:right;"> 19.83 </td>
    <td style="text-align:right;"> 2 </td>
-   <td style="text-align:left;"> Y </td>
-   <td style="text-align:right;"> 930 </td>
-   <td style="text-align:left;"> 1994-02-02 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 3224 </td>
-   <td style="text-align:right;"> 460.57 </td>
-   <td style="text-align:right;"> 105.99 </td>
-   <td style="text-align:right;"> 105 </td>
-   <td style="text-align:right;"> 8.83 </td>
-   <td style="text-align:right;"> -30 </td>
-   <td style="text-align:right;"> 64 </td>
-   <td style="text-align:right;"> -0.47 </td>
-   <td style="text-align:right;"> 4504 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 1336 </td>
+   <td style="text-align:left;"> 1995-07-05 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 2301 </td>
+   <td style="text-align:right;"> 328.71 </td>
+   <td style="text-align:right;"> 75.65 </td>
+   <td style="text-align:right;"> 75 </td>
+   <td style="text-align:right;"> 6.30 </td>
+   <td style="text-align:right;"> 41 </td>
+   <td style="text-align:right;"> 34 </td>
+   <td style="text-align:right;"> 1.21 </td>
+   <td style="text-align:right;"> 4937 </td>
    <td style="text-align:right;"> 1.33 </td>
    <td style="text-align:left;"> adult </td>
    <td style="text-align:left;"> NP </td>
@@ -1324,109 +1044,53 @@ exploratory_data %>%
    <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> VVV </td>
-   <td style="text-align:left;"> 5712 </td>
-   <td style="text-align:left;"> N </td>
-   <td style="text-align:left;"> M </td>
-   <td style="text-align:left;"> RIGEL </td>
-   <td style="text-align:left;"> N </td>
-   <td style="text-align:left;"> 133 </td>
-   <td style="text-align:left;"> 1978-04-28 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> CB </td>
-   <td style="text-align:left;"> Gladys Porter Zoo </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 104 </td>
-   <td style="text-align:left;"> 1978-01-14 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:left;"> oi_524 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:left;"> oi_389 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:left;"> 2004-06-20 </td>
-   <td style="text-align:right;"> 26.16 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 26.16 </td>
-   <td style="text-align:right;"> 5 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> 4159 </td>
-   <td style="text-align:left;"> 1991-12-19 </td>
-   <td style="text-align:right;"> 12 </td>
-   <td style="text-align:right;"> 4983 </td>
-   <td style="text-align:right;"> 711.86 </td>
-   <td style="text-align:right;"> 163.82 </td>
-   <td style="text-align:right;"> 163 </td>
-   <td style="text-align:right;"> 13.65 </td>
-   <td style="text-align:right;"> 32 </td>
-   <td style="text-align:right;"> 120 </td>
-   <td style="text-align:right;"> 0.27 </td>
-   <td style="text-align:right;"> 4567 </td>
-   <td style="text-align:right;"> 1.59 </td>
-   <td style="text-align:left;"> adult </td>
-   <td style="text-align:left;"> NP </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> EFLA </td>
-   <td style="text-align:left;"> 6521 </td>
+   <td style="text-align:left;"> LTAR </td>
+   <td style="text-align:left;"> 1921 </td>
    <td style="text-align:left;"> N </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> LANGE </td>
+   <td style="text-align:left;"> ASHWANI </td>
    <td style="text-align:left;"> N </td>
-   <td style="text-align:left;"> 62 </td>
-   <td style="text-align:left;"> 1993-03-11 </td>
-   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:left;"> 1067 </td>
+   <td style="text-align:left;"> 1986-12-23 </td>
+   <td style="text-align:right;"> 12 </td>
    <td style="text-align:left;"> NA </td>
    <td style="text-align:left;"> CB </td>
    <td style="text-align:left;"> Duke Lemur Center </td>
    <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 124 </td>
-   <td style="text-align:left;"> 1992-11-07 </td>
-   <td style="text-align:right;"> 11 </td>
-   <td style="text-align:left;"> 6393 </td>
-   <td style="text-align:left;"> GARBO </td>
-   <td style="text-align:left;"> EFLA </td>
-   <td style="text-align:left;"> 1987-11-01 </td>
-   <td style="text-align:right;"> 5.02 </td>
-   <td style="text-align:left;"> 6248 </td>
-   <td style="text-align:left;"> BARRYMORE </td>
-   <td style="text-align:left;"> EFLA </td>
-   <td style="text-align:left;"> 1988-05-09 </td>
-   <td style="text-align:right;"> 4.50 </td>
-   <td style="text-align:left;"> 2007-05-07 </td>
-   <td style="text-align:right;"> 14.16 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 14.16 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> 1710 </td>
-   <td style="text-align:left;"> 1993-11-09 </td>
-   <td style="text-align:right;"> 11 </td>
-   <td style="text-align:right;"> 243 </td>
-   <td style="text-align:right;"> 34.71 </td>
-   <td style="text-align:right;"> 7.99 </td>
+   <td style="text-align:right;"> 167 </td>
+   <td style="text-align:left;"> 1986-07-09 </td>
    <td style="text-align:right;"> 7 </td>
-   <td style="text-align:right;"> 0.67 </td>
-   <td style="text-align:right;"> 780 </td>
-   <td style="text-align:right;"> 111 </td>
-   <td style="text-align:right;"> 7.03 </td>
-   <td style="text-align:right;"> 4927 </td>
-   <td style="text-align:right;"> 1.58 </td>
-   <td style="text-align:left;"> IJ </td>
+   <td style="text-align:left;"> 991 </td>
+   <td style="text-align:left;"> KIRAN </td>
+   <td style="text-align:left;"> LTAR </td>
+   <td style="text-align:left;"> 1982-04-12 </td>
+   <td style="text-align:right;"> 4.24 </td>
+   <td style="text-align:left;"> 990 </td>
+   <td style="text-align:left;"> RAJIV </td>
+   <td style="text-align:left;"> LTAR </td>
+   <td style="text-align:left;"> 1982-04-12 </td>
+   <td style="text-align:right;"> 4.24 </td>
+   <td style="text-align:left;"> 2005-08-09 </td>
+   <td style="text-align:right;"> 18.64 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 18.64 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 165 </td>
+   <td style="text-align:left;"> 2000-03-02 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 4818 </td>
+   <td style="text-align:right;"> 688.29 </td>
+   <td style="text-align:right;"> 158.40 </td>
+   <td style="text-align:right;"> 158 </td>
+   <td style="text-align:right;"> 13.20 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 38 </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 1986 </td>
+   <td style="text-align:right;"> 0.99 </td>
+   <td style="text-align:left;"> adult </td>
    <td style="text-align:left;"> NP </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> NA </td>
@@ -1436,53 +1100,389 @@ exploratory_data %>%
    <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> ECOR </td>
-   <td style="text-align:left;"> 6478 </td>
+   <td style="text-align:left;"> DMAD </td>
+   <td style="text-align:left;"> 6451 </td>
    <td style="text-align:left;"> N </td>
    <td style="text-align:left;"> M </td>
-   <td style="text-align:left;"> Geb </td>
+   <td style="text-align:left;"> Mephistopheles </td>
    <td style="text-align:left;"> N </td>
-   <td style="text-align:left;"> 54 </td>
-   <td style="text-align:left;"> 1992-04-06 </td>
+   <td style="text-align:left;"> 114 </td>
+   <td style="text-align:left;"> 1981-10-08 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:left;"> Y01 </td>
+   <td style="text-align:left;"> WB </td>
+   <td style="text-align:left;"> Madagascar / </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 165 </td>
+   <td style="text-align:left;"> 1981-04-26 </td>
    <td style="text-align:right;"> 4 </td>
+   <td style="text-align:left;"> WILD </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> WILD </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> 2014-02-12 </td>
+   <td style="text-align:right;"> 32.37 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 32.37 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:left;"> Y01 </td>
+   <td style="text-align:right;"> 2790 </td>
+   <td style="text-align:left;"> 2003-12-09 </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 8097 </td>
+   <td style="text-align:right;"> 1156.71 </td>
+   <td style="text-align:right;"> 266.20 </td>
+   <td style="text-align:right;"> 266 </td>
+   <td style="text-align:right;"> 22.18 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 1.25 </td>
+   <td style="text-align:right;"> 3718 </td>
+   <td style="text-align:right;"> 4.22 </td>
+   <td style="text-align:left;"> adult </td>
+   <td style="text-align:left;"> NP </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GMOH </td>
+   <td style="text-align:left;"> 3141 </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> SEAGRAPE </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> 1989-02-01 </td>
+   <td style="text-align:right;"> 2 </td>
    <td style="text-align:left;"> NA </td>
    <td style="text-align:left;"> CB </td>
    <td style="text-align:left;"> Duke Lemur Center </td>
    <td style="text-align:right;"> 2 </td>
    <td style="text-align:right;"> 124 </td>
-   <td style="text-align:left;"> 1991-12-04 </td>
-   <td style="text-align:right;"> 12 </td>
-   <td style="text-align:left;"> 5937 </td>
-   <td style="text-align:left;"> MERITATEN </td>
-   <td style="text-align:left;"> ECOR </td>
-   <td style="text-align:left;"> 1984-05-29 </td>
-   <td style="text-align:right;"> 7.52 </td>
-   <td style="text-align:left;"> 6251 </td>
-   <td style="text-align:left;"> BES </td>
-   <td style="text-align:left;"> ECOR </td>
-   <td style="text-align:left;"> 1988-05-18 </td>
-   <td style="text-align:right;"> 3.55 </td>
-   <td style="text-align:left;"> 2018-10-25 </td>
-   <td style="text-align:right;"> 26.57 </td>
+   <td style="text-align:left;"> 1988-09-30 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:left;"> 3099 </td>
+   <td style="text-align:left;"> LYSILOMA </td>
+   <td style="text-align:left;"> GMOH </td>
+   <td style="text-align:left;"> 1987-03-22 </td>
+   <td style="text-align:right;"> 1.53 </td>
+   <td style="text-align:left;"> 3104 </td>
+   <td style="text-align:left;"> VIRBURNAM </td>
+   <td style="text-align:left;"> GMOH </td>
+   <td style="text-align:left;"> 1987-05-12 </td>
+   <td style="text-align:right;"> 1.39 </td>
+   <td style="text-align:left;"> 1998-09-24 </td>
+   <td style="text-align:right;"> 9.65 </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 26.57 </td>
+   <td style="text-align:right;"> 9.65 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 147 </td>
+   <td style="text-align:left;"> 1996-06-05 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 2681 </td>
+   <td style="text-align:right;"> 383.00 </td>
+   <td style="text-align:right;"> 88.14 </td>
+   <td style="text-align:right;"> 88 </td>
+   <td style="text-align:right;"> 7.35 </td>
+   <td style="text-align:right;"> -3 </td>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:right;"> -0.11 </td>
+   <td style="text-align:right;"> 841 </td>
+   <td style="text-align:right;"> 0.40 </td>
+   <td style="text-align:left;"> adult </td>
+   <td style="text-align:left;"> NP </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> NA </td>
-   <td style="text-align:right;"> 1470 </td>
-   <td style="text-align:left;"> 2009-03-02 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> MMUR </td>
+   <td style="text-align:left;"> 7047 </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> Spalt </td>
+   <td style="text-align:left;"> Y </td>
+   <td style="text-align:left;"> 727 </td>
+   <td style="text-align:left;"> 2011-06-07 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> CB </td>
+   <td style="text-align:left;"> Duke Lemur Center </td>
    <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 6174 </td>
-   <td style="text-align:right;"> 882.00 </td>
-   <td style="text-align:right;"> 202.98 </td>
-   <td style="text-align:right;"> 202 </td>
-   <td style="text-align:right;"> 16.92 </td>
-   <td style="text-align:right;"> -50 </td>
-   <td style="text-align:right;"> 111 </td>
-   <td style="text-align:right;"> -0.45 </td>
-   <td style="text-align:right;"> 3524 </td>
-   <td style="text-align:right;"> 1.70 </td>
+   <td style="text-align:right;"> 63 </td>
+   <td style="text-align:left;"> 2011-04-05 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:left;"> 7028 </td>
+   <td style="text-align:left;"> Calendula </td>
+   <td style="text-align:left;"> MMUR </td>
+   <td style="text-align:left;"> 2008-05-25 </td>
+   <td style="text-align:right;"> 2.86 </td>
+   <td style="text-align:left;"> MULT2 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 7.67 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 7.67 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 71 </td>
+   <td style="text-align:left;"> 2014-09-26 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 1207 </td>
+   <td style="text-align:right;"> 172.43 </td>
+   <td style="text-align:right;"> 39.68 </td>
+   <td style="text-align:right;"> 39 </td>
+   <td style="text-align:right;"> 3.31 </td>
+   <td style="text-align:right;"> -3 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> -0.43 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.59 </td>
    <td style="text-align:left;"> adult </td>
+   <td style="text-align:left;"> NP </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> EFUL </td>
+   <td style="text-align:left;"> 6123 </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> Frigga </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> 1075 </td>
+   <td style="text-align:left;"> 1984-03-31 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> CB </td>
+   <td style="text-align:left;"> BREC's  Baton Rouge Zoo </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 120 </td>
+   <td style="text-align:left;"> 1983-12-02 </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:left;"> 3532 </td>
+   <td style="text-align:left;"> LIBYA </td>
+   <td style="text-align:left;"> EFUL </td>
+   <td style="text-align:left;"> 1977-06-27 </td>
+   <td style="text-align:right;"> 6.44 </td>
+   <td style="text-align:left;"> 556 </td>
+   <td style="text-align:left;"> CADMUS </td>
+   <td style="text-align:left;"> EFUL </td>
+   <td style="text-align:left;"> 1970-03-15 </td>
+   <td style="text-align:right;"> 13.73 </td>
+   <td style="text-align:left;"> 2014-01-22 </td>
+   <td style="text-align:right;"> 29.83 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 29.83 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 3040 </td>
+   <td style="text-align:left;"> 2005-07-21 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 7782 </td>
+   <td style="text-align:right;"> 1111.71 </td>
+   <td style="text-align:right;"> 255.85 </td>
+   <td style="text-align:right;"> 255 </td>
+   <td style="text-align:right;"> 21.32 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 3107 </td>
+   <td style="text-align:right;"> 1.39 </td>
+   <td style="text-align:left;"> adult </td>
+   <td style="text-align:left;"> NP </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> MZAZ </td>
+   <td style="text-align:left;"> 360 </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> MONJO </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> 146 </td>
+   <td style="text-align:left;"> 1987-04-21 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> CB </td>
+   <td style="text-align:left;"> Duke Lemur Center </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 90 </td>
+   <td style="text-align:left;"> 1987-01-21 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:left;"> 318 </td>
+   <td style="text-align:left;"> FANDRASA </td>
+   <td style="text-align:left;"> MZAZ </td>
+   <td style="text-align:left;"> 1979-08-25 </td>
+   <td style="text-align:right;"> 7.41 </td>
+   <td style="text-align:left;"> 319 </td>
+   <td style="text-align:left;"> GAKA </td>
+   <td style="text-align:left;"> MZAZ </td>
+   <td style="text-align:left;"> 1979-08-25 </td>
+   <td style="text-align:right;"> 7.41 </td>
+   <td style="text-align:left;"> 2002-11-20 </td>
+   <td style="text-align:right;"> 15.59 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 15.59 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 345 </td>
+   <td style="text-align:left;"> 2000-01-04 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 4641 </td>
+   <td style="text-align:right;"> 663.00 </td>
+   <td style="text-align:right;"> 152.58 </td>
+   <td style="text-align:right;"> 152 </td>
+   <td style="text-align:right;"> 12.72 </td>
+   <td style="text-align:right;"> -10 </td>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:right;"> -0.34 </td>
+   <td style="text-align:right;"> 1051 </td>
+   <td style="text-align:right;"> 0.82 </td>
+   <td style="text-align:left;"> adult </td>
+   <td style="text-align:left;"> NP </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> MMUR </td>
+   <td style="text-align:left;"> 7032 </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> Pesto </td>
+   <td style="text-align:left;"> Y </td>
+   <td style="text-align:left;"> 718 </td>
+   <td style="text-align:left;"> 2008-06-04 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> CB </td>
+   <td style="text-align:left;"> Museum National d'Histoire Naturelle </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 63 </td>
+   <td style="text-align:left;"> 2008-04-02 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:left;"> oi_162A </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> oi_149I </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 10.68 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 10.68 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 72 </td>
+   <td style="text-align:left;"> 2018-10-24 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 3794 </td>
+   <td style="text-align:right;"> 542.00 </td>
+   <td style="text-align:right;"> 124.73 </td>
+   <td style="text-align:right;"> 124 </td>
+   <td style="text-align:right;"> 10.39 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 15 </td>
+   <td style="text-align:right;"> 0.07 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.59 </td>
+   <td style="text-align:left;"> adult </td>
+   <td style="text-align:left;"> NP </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> MZAZ </td>
+   <td style="text-align:left;"> 2310 </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> KIKIMOVA </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> 205 </td>
+   <td style="text-align:left;"> 1993-08-02 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> CB </td>
+   <td style="text-align:left;"> Duke Lemur Center </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 90 </td>
+   <td style="text-align:left;"> 1993-05-04 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:left;"> 321 </td>
+   <td style="text-align:left;"> PITSY </td>
+   <td style="text-align:left;"> MZAZ </td>
+   <td style="text-align:left;"> 1982-09-02 </td>
+   <td style="text-align:right;"> 10.68 </td>
+   <td style="text-align:left;"> 315 </td>
+   <td style="text-align:left;"> AROSY </td>
+   <td style="text-align:left;"> MZAZ </td>
+   <td style="text-align:left;"> 1979-08-25 </td>
+   <td style="text-align:right;"> 13.70 </td>
+   <td style="text-align:left;"> 2010-02-03 </td>
+   <td style="text-align:right;"> 16.52 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 16.52 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:right;"> 219 </td>
+   <td style="text-align:left;"> 1994-03-09 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 219 </td>
+   <td style="text-align:right;"> 31.29 </td>
+   <td style="text-align:right;"> 7.20 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 0.60 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 0.08 </td>
+   <td style="text-align:right;"> 5810 </td>
+   <td style="text-align:right;"> 0.82 </td>
+   <td style="text-align:left;"> IJ </td>
    <td style="text-align:left;"> NP </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> NA </td>
@@ -1500,18 +1500,20 @@ exploratory_data %>%
 :::
 
 
-## About Our Data
+## Introduction
 
-This data comes from the Duke Lemur Center. The Duke Lemur Center houses over 200 lemurs across 14 species. Lemurs are the most threatened group of mammals and are at risk of extinction. Lemurs are native to Madagascar which is located in the southwestern Indian Ocean. This data set contains taxonomic code, specimen ID, hybrid status, sex, name, DOB, birth month, birth type, birth institution, litter size, and many more interesting variables about lemurs. This is a very large data set containing
+This data comes from the Duke Lemur Center. The Duke Lemur Center houses over 200 lemurs across 14 species. Lemurs are the most threatened group of mammals and are at risk of extinction. Lemurs are native to Madagascar which is located in the southwestern Indian Ocean. This data set contains taxonomic code, specimen ID, hybrid status, sex, name, DOB, birth month, birth type, birth institution, litter size, and many more interesting variables about lemurs. This is a very large data set containing several different variables.
 
-## Interesting Questions to Ask
+## Abstract
 
-This is a very large data set so the purpose of asking these questions is to find interesting hypotheses to ask. Exploring the data will make it easier to create hypotheses
+This is a very large data set so the purpose of asking these questions is to find interesting hypotheses to ask. Exploring the data will make it easier to create hypotheses. Here are some interesting questions I asked.
 
 -   How many Lemurs are there? By sex?
 -   What is the average weight of a Lemur? What about for each taxon?
 -   What is the average birth type for a Lemur? By sex? By Taxon?
 -   Does average litter size change by birth type?
+
+In this report, these questions will be answered using different functions and visuals. An hypothesis will also be created and functions and visuals will support or refute the hypothesis. The purpose of this research is to shed light on Lemurs because I feel like Lemurs as a whole aren't really talked about much. The outcomes of this research will provide us with a lot more knowledge about Lemurs and their lifestyle.
 
 ## Hypotheses
 
@@ -1536,9 +1538,9 @@ exploratory_data %>%
 # A tibble: 3 × 2
   sex       n
   <chr> <int>
-1 F     20280
-2 M     21015
-3 ND        9
+1 F     20349
+2 M     20948
+3 ND        7
 ```
 :::
 
@@ -1552,16 +1554,16 @@ exploratory_data %>%
 # A tibble: 27 × 2
    taxon     n
    <chr> <int>
- 1 CMED   4039
- 2 DMAD   2521
- 3 EALB    159
- 4 ECOL   1240
- 5 ECOR   1055
- 6 EFLA   1600
- 7 EFUL    177
- 8 EMAC    868
- 9 EMON   1773
-10 ERUB    666
+ 1 CMED   4015
+ 2 DMAD   2480
+ 3 EALB    161
+ 4 ECOL   1231
+ 5 ECOR   1050
+ 6 EFLA   1602
+ 7 EFUL    159
+ 8 EMAC    880
+ 9 EMON   1804
+10 ERUB    688
 # … with 17 more rows
 ```
 :::
@@ -1573,20 +1575,20 @@ exploratory_data %>%
 
 ::: {.cell-output .cell-output-stdout}
 ```
-# A tibble: 1,996 × 2
+# A tibble: 1,991 × 2
    name         n
    <chr>    <int>
- 1 AARON        2
- 2 ABAS         5
- 3 ABDUL        1
- 4 ABEDNIGO    12
+ 1 AARON        1
+ 2 ABAS         9
+ 3 ABDUL        2
+ 4 ABEDNIGO    13
  5 ABEL         2
- 6 ABENA       54
- 7 ABIGAIL      1
- 8 ABNER        1
- 9 ABSINTHE     2
-10 Abu        134
-# … with 1,986 more rows
+ 6 ABENA       51
+ 7 ABIGAIL      2
+ 8 ABSINTHE     2
+ 9 Abu        116
+10 ACHILLES     1
+# … with 1,981 more rows
 ```
 :::
 
@@ -1598,21 +1600,21 @@ exploratory_data %>%
 
 ::: {.cell-output .cell-output-stdout}
 ```
-# A tibble: 1,998 × 3
-# Groups:   name [1,996]
+# A tibble: 1,992 × 3
+# Groups:   name [1,991]
    name     sex       n
    <chr>    <chr> <int>
- 1 AARON    M         2
- 2 ABAS     M         5
- 3 ABDUL    M         1
- 4 ABEDNIGO M        12
+ 1 AARON    M         1
+ 2 ABAS     M         9
+ 3 ABDUL    M         2
+ 4 ABEDNIGO M        13
  5 ABEL     M         2
- 6 ABENA    F        54
- 7 ABIGAIL  F         1
- 8 ABNER    M         1
- 9 ABSINTHE M         2
-10 Abu      F       134
-# … with 1,988 more rows
+ 6 ABENA    F        51
+ 7 ABIGAIL  F         2
+ 8 ABSINTHE M         2
+ 9 Abu      F       116
+10 ACHILLES M         1
+# … with 1,982 more rows
 ```
 :::
 :::
@@ -1648,7 +1650,7 @@ exploratory_data %>%
 # A tibble: 1 × 1
   avg_lemur_weight
              <dbl>
-1            1484.
+1            1479.
 ```
 :::
 
@@ -1663,16 +1665,16 @@ exploratory_data %>%
 # A tibble: 27 × 2
    taxon avg_lemur_weight
    <chr>            <dbl>
- 1 CMED              209.
- 2 DMAD             2188.
- 3 EALB             2055.
- 4 ECOL             2280.
- 5 ECOR             1483.
- 6 EFLA             2131.
+ 1 CMED              208.
+ 2 DMAD             2179.
+ 3 EALB             2092.
+ 4 ECOL             2285.
+ 5 ECOR             1484.
+ 6 EFLA             2134.
  7 EFUL             2321.
- 8 EMAC             2193.
- 9 EMON             1434.
-10 ERUB             2121.
+ 8 EMAC             2221.
+ 9 EMON             1427.
+10 ERUB             2105.
 # … with 17 more rows
 ```
 :::
@@ -1694,9 +1696,9 @@ exploratory_data %>%
 # A tibble: 3 × 2
   birth_type     n
   <chr>      <int>
-1 CB         37544
-2 Unk           81
-3 WB          3679
+1 CB         37491
+2 Unk           85
+3 WB          3728
 ```
 :::
 
@@ -1708,21 +1710,21 @@ exploratory_data %>%
 
 ::: {.cell-output .cell-output-stdout}
 ```
-# A tibble: 56 × 3
+# A tibble: 55 × 3
 # Groups:   taxon [27]
    taxon birth_type     n
    <chr> <chr>      <int>
- 1 CMED  CB          4035
- 2 CMED  WB             4
- 3 DMAD  CB          1563
- 4 DMAD  WB           958
- 5 EALB  CB           159
- 6 ECOL  CB          1130
- 7 ECOL  WB           110
- 8 ECOR  CB          1009
- 9 ECOR  Unk            8
-10 ECOR  WB            38
-# … with 46 more rows
+ 1 CMED  CB          4013
+ 2 CMED  WB             2
+ 3 DMAD  CB          1541
+ 4 DMAD  WB           939
+ 5 EALB  CB           161
+ 6 ECOL  CB          1122
+ 7 ECOL  WB           109
+ 8 ECOR  CB           998
+ 9 ECOR  Unk            6
+10 ECOR  WB            46
+# … with 45 more rows
 ```
 :::
 
@@ -1738,13 +1740,13 @@ exploratory_data %>%
 # Groups:   sex [3]
   sex   birth_type     n
   <chr> <chr>      <int>
-1 F     CB         18283
-2 F     Unk           51
-3 F     WB          1946
-4 M     CB         19252
-5 M     Unk           30
-6 M     WB          1733
-7 ND    CB             9
+1 F     CB         18350
+2 F     Unk           59
+3 F     WB          1940
+4 M     CB         19134
+5 M     Unk           26
+6 M     WB          1788
+7 ND    CB             7
 ```
 :::
 
@@ -1776,11 +1778,11 @@ exploratory_data %>%
 # A tibble: 5 × 2
   litter_size     n
         <dbl> <int>
-1           1 17369
-2           2  9688
-3           3  4282
-4           4   906
-5          NA  9059
+1           1 17267
+2           2  9804
+3           3  4241
+4           4   944
+5          NA  9048
 ```
 :::
 
@@ -1793,7 +1795,7 @@ exploratory_data %>%
 
 ::: {.cell-output .cell-output-stderr}
 ```
-Warning: Removed 9059 rows containing non-finite values (`stat_count()`).
+Warning: Removed 9048 rows containing non-finite values (`stat_count()`).
 ```
 :::
 
@@ -1813,13 +1815,13 @@ exploratory_data %>%
 # Groups:   birth_type [3]
   birth_type litter_size     n
   <chr>            <dbl> <int>
-1 CB                   1 17369
-2 CB                   2  9688
-3 CB                   3  4282
-4 CB                   4   906
-5 CB                  NA  5299
-6 Unk                 NA    81
-7 WB                  NA  3679
+1 CB                   1 17267
+2 CB                   2  9804
+3 CB                   3  4241
+4 CB                   4   944
+5 CB                  NA  5235
+6 Unk                 NA    85
+7 WB                  NA  3728
 ```
 :::
 :::
@@ -1844,8 +1846,8 @@ exploratory_data %>%
 # A tibble: 2 × 2
   hybrid     n
   <chr>  <int>
-1 N      40315
-2 Sp       989
+1 N      40292
+2 Sp      1012
 ```
 :::
 
@@ -1857,21 +1859,21 @@ exploratory_data %>%
 
 ::: {.cell-output .cell-output-stdout}
 ```
-# A tibble: 28 × 3
+# A tibble: 29 × 3
 # Groups:   taxon [27]
    taxon hybrid     n
    <chr> <chr>  <int>
- 1 CMED  N       4039
- 2 DMAD  N       2521
- 3 EALB  N        159
- 4 ECOL  N       1240
- 5 ECOR  N       1055
- 6 EFLA  N       1600
- 7 EFUL  N        177
- 8 EMAC  N        868
- 9 EMON  N       1773
-10 ERUB  N        666
-# … with 18 more rows
+ 1 CMED  N       4015
+ 2 DMAD  N       2480
+ 3 EALB  N        161
+ 4 ECOL  N       1231
+ 5 ECOR  N       1050
+ 6 EFLA  N       1602
+ 7 EFUL  N        159
+ 8 EMAC  N        880
+ 9 EMON  N       1804
+10 ERUB  N        688
+# … with 19 more rows
 ```
 :::
 
@@ -1887,11 +1889,11 @@ exploratory_data %>%
 # Groups:   sex [3]
   sex   hybrid     n
   <chr> <chr>  <int>
-1 F     N      19923
-2 F     Sp       357
-3 M     N      20384
-4 M     Sp       631
-5 ND    N          8
+1 F     N      19991
+2 F     Sp       358
+3 M     N      20295
+4 M     Sp       653
+5 ND    N          6
 6 ND    Sp         1
 ```
 :::
@@ -1926,19 +1928,19 @@ exploratory_data %>%
 # A tibble: 13 × 2
    concep_month     n
           <dbl> <int>
- 1            1  4928
- 2            2  2208
- 3            3  2052
- 4            4  4035
- 5            5  5153
- 6            6  4223
- 7            7  2150
- 8            8  1787
- 9            9  2023
-10           10  2036
-11           11  5909
-12           12  4796
-13           NA     4
+ 1            1  4925
+ 2            2  2238
+ 3            3  1973
+ 4            4  4014
+ 5            5  5182
+ 6            6  4189
+ 7            7  2154
+ 8            8  1762
+ 9            9  2078
+10           10  2070
+11           11  5932
+12           12  4784
+13           NA     3
 ```
 :::
 
@@ -1949,20 +1951,20 @@ exploratory_data %>%
 
 ::: {.cell-output .cell-output-stdout}
 ```
-# A tibble: 494 × 2
+# A tibble: 490 × 2
    infant_dob_if_preg     n
    <date>             <int>
  1 1972-03-08             1
- 2 1972-04-27             1
- 3 1972-05-08             1
- 4 1972-06-01             1
- 5 1972-07-05             1
- 6 1972-07-12             1
- 7 1972-10-04             1
- 8 1980-05-02             1
+ 2 1972-04-29             1
+ 3 1972-07-05             1
+ 4 1972-07-10             1
+ 5 1972-07-20             1
+ 6 1972-10-04             1
+ 7 1980-05-07             1
+ 8 1980-05-08             1
  9 1980-07-14             1
-10 1980-07-20             1
-# … with 484 more rows
+10 1981-03-06             1
+# … with 480 more rows
 ```
 :::
 
@@ -1981,18 +1983,18 @@ exploratory_data %>%
 # A tibble: 12 × 2
    infant_dob_month total_births
               <dbl>        <dbl>
- 1                1           78
- 2                2           63
- 3                3          164
- 4                4           95
- 5                5          100
- 6                6           72
+ 1                1           61
+ 2                2           62
+ 3                3          172
+ 4                4          121
+ 5                5          105
+ 6                6           71
  7                7           63
- 8                8           45
- 9                9           16
-10               10           23
-11               11            5
-12               12           32
+ 8                8           24
+ 9                9           15
+10               10           22
+11               11            6
+12               12           25
 ```
 :::
 
@@ -2006,7 +2008,7 @@ exploratory_data %>%
 # A tibble: 1 × 1
   avg_expected_gestation
                    <dbl>
-1                   119.
+1                   120.
 ```
 :::
 :::
@@ -2037,8 +2039,8 @@ test_data %>%
 # A tibble: 2 × 2
   hybrid     n
   <chr>  <int>
-1 N      40290
-2 Sp      1015
+1 N      40313
+2 Sp       992
 ```
 :::
 
@@ -2054,16 +2056,16 @@ test_data %>%
 # Groups:   taxon [27]
    taxon hybrid     n
    <chr> <chr>  <int>
- 1 CMED  N       4031
- 2 DMAD  N       2556
- 3 EALB  N        168
- 4 ECOL  N       1227
- 5 ECOR  N       1039
- 6 EFLA  N       1617
- 7 EFUL  N        151
- 8 EMAC  N        866
- 9 EMON  N       1872
-10 ERUB  N        690
+ 1 CMED  N       4055
+ 2 DMAD  N       2597
+ 3 EALB  N        166
+ 4 ECOL  N       1236
+ 5 ECOR  N       1044
+ 6 EFLA  N       1615
+ 7 EFUL  N        169
+ 8 EMAC  N        854
+ 9 EMON  N       1841
+10 ERUB  N        668
 # … with 19 more rows
 ```
 :::
@@ -2080,11 +2082,11 @@ test_data %>%
 # Groups:   sex [3]
   sex   hybrid     n
   <chr> <chr>  <int>
-1 F     N      19915
-2 F     Sp       362
-3 M     N      20369
-4 M     Sp       653
-5 ND    N          6
+1 F     N      19847
+2 F     Sp       361
+3 M     N      20458
+4 M     Sp       631
+5 ND    N          8
 ```
 :::
 
@@ -2116,19 +2118,19 @@ test_data %>%
 # A tibble: 13 × 2
    concep_month     n
           <dbl> <int>
- 1            1  4921
- 2            2  2273
- 3            3  1954
- 4            4  4039
- 5            5  5149
- 6            6  4161
- 7            7  2126
- 8            8  1764
- 9            9  2105
-10           10  2049
-11           11  5967
-12           12  4793
-13           NA     4
+ 1            1  4924
+ 2            2  2243
+ 3            3  2033
+ 4            4  4060
+ 5            5  5120
+ 6            6  4195
+ 7            7  2122
+ 8            8  1789
+ 9            9  2050
+10           10  2015
+11           11  5944
+12           12  4805
+13           NA     5
 ```
 :::
 
@@ -2139,20 +2141,20 @@ test_data %>%
 
 ::: {.cell-output .cell-output-stdout}
 ```
-# A tibble: 475 × 2
+# A tibble: 488 × 2
    infant_dob_if_preg     n
    <date>             <int>
- 1 1972-04-29             1
- 2 1972-05-12             1
- 3 1972-07-05             1
- 4 1972-07-10             1
- 5 1972-07-20             1
- 6 1980-05-07             1
- 7 1980-05-08             1
- 8 1980-07-20             1
- 9 1981-05-03             1
-10 1982-04-05             2
-# … with 465 more rows
+ 1 1972-04-27             1
+ 2 1972-05-08             1
+ 3 1972-05-12             1
+ 4 1972-06-01             1
+ 5 1972-07-05             1
+ 6 1972-07-12             1
+ 7 1980-05-02             1
+ 8 1980-07-20             2
+ 9 1980-07-28             1
+10 1980-08-16             1
+# … with 478 more rows
 ```
 :::
 
@@ -2171,18 +2173,18 @@ test_data %>%
 # A tibble: 12 × 2
    infant_dob_month total_births
               <dbl>        <dbl>
- 1                1           64
- 2                2           72
- 3                3          172
- 4                4          121
- 5                5           95
- 6                6           74
+ 1                1           81
+ 2                2           73
+ 3                3          164
+ 4                4           95
+ 5                5           90
+ 6                6           75
  7                7           59
- 8                8           33
- 9                9           14
-10               10           19
-11               11            8
-12               12           23
+ 8                8           54
+ 9                9           15
+10               10           20
+11               11            7
+12               12           30
 ```
 :::
 
@@ -2196,7 +2198,12 @@ test_data %>%
 # A tibble: 1 × 1
   avg_expected_gestation
                    <dbl>
-1                   120.
+1                   119.
 ```
 :::
 :::
+
+
+## Conclusion
+
+In conclusion, Lemurs are very interesting species. Lemurs are the most threatened group of mammals and are at risk of extinction. Lemurs are native to Madagascar which is located in the southwestern Indian Ocean. I've learned a lot about Lemurs through this report. My first hypothesis was If hybrid Lemurs are born then they are more likely to be captive-born rather than wild-born. In conclusion, my hypothesis was accepted, If hybrid Lemurs are born then they are more likely to be captive-born. My second hypothesis was If Lemurs are mating it will more likely be in April and then the infants will be born around August and September. In conclusion, the hypothesis was refuted but according to the expected gestation my hypothesis should have been on point. There are many other things to explore in this data set and many more interesting things to learn about Lemurs. This data comes from the Duke Lemur Center.
